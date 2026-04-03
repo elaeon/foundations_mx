@@ -145,6 +145,7 @@ def main():
             scores[rfc] = {
                 "rfc": rfc,
                 "name": fundation["name"],
+                "model": args.model,
                 **result,
             }
             print(f"exposure={result['exposure']}")
@@ -173,7 +174,7 @@ def main():
         for s in vals:
             bucket = s["exposure"]
             by_score[bucket] = by_score.get(bucket, 0) + 1
-        print(f"\nAverage exposure across {len(vals)} occupations: {avg:.1f}")
+        print(f"\nAverage exposure across {len(vals)} fundation: {avg:.1f}")
         print("Distribution:")
         for k in sorted(by_score):
             print(f"  {k}: {'█' * by_score[k]} ({by_score[k]})")
