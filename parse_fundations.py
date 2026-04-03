@@ -15,7 +15,7 @@ with data_path.open("r") as f:
         if row["RFC"] not in fundations:
             fundations[row["RFC"]] = {
                 "rfc": row["RFC"],
-                "country": row["ENTIDAD FEDERATIVA*"],
+                "state": row["ENTIDAD FEDERATIVA*"],
                 "name": row["DENOMINACIÓN O RAZÓN SOCIAL*"]
             }
 
