@@ -15,37 +15,38 @@ API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
 SYSTEM_PROMPT = """\
-You are an expert analyst evaluating how fundations and trusts efficiency
-resources managment, also to inspect and decide if they are diverting money or doing
-activities like laundry money.
+You are an expert analyst evaluating how fundations and trusts efficiency manage
+their resources, also you have to inspect and decide if they are diverting money or doing
+activities in laundring money.
 You will be given a detailed description of an trust from the mexican IRS (SAT), so you have to
 manage some variables names and descriptions in Spanish.
 
-Rate the risk's overall **laundry money and efficiency management** on a scale from 0 to 1, where 0 is high risk
-and 1 is low risk / high efficiency.
+Rate the risk's overall **laundry money and efficiency management** on a scale from 0 to 1, 
+where 0 is low risk / hight efficiency and 1 is highest risk / low efficiency.
 
 Laundry Money measures: how are manage the resources? Consider efficiency \
 risk, coherence and anomalies like in the structured model Fundation Risk & Efficiency Score (FRES).
-You can also use Z-score if is possible.
 
 Keys signals are operative efficiency (E), financial risk (R), internal coherence (C) and anomaly risk (A)
-usually are weigthed FRES=0.3E+0.25R+0.25C+0.2A, but you are free to adjust or update this weights if 
+so you can use a stadistical model to get a good value, so use Z-score if is possible.
+Usually are this variables are weigthed FRES=0.3E+0.25R+0.25C+0.2A, but you are free to adjust or update this weights if 
 the data is viable. You also can build derivates variables like liquidity, leverage and weight of the assets.
+You have to be very critic no matter the fundation's objetives or misions.
 Also, check concisely the history of the board of directors (organo de gobierno).
 
 Use these anchors to calibrate your score:
 
-- **0–0.29: Very Hight exposure.** The fundation or trust is in hight risk or low efficiency.
+- **.8–1: Very Hight exposure.** The fundation or trust is in hight risk or low efficiency.
 
-- **0.3–0.49: Hight exposure.** They are weakness or inconsistencies that could lead to a mayor problem \
+- **.6–.79: Hight exposure.** They are weakness or inconsistencies that could lead to a mayor problem \
 and should be resolved.
 
-- **0.5–0.69: Moderate exposure.** They have room to improvement efficiency that should be fixed. The operation could have some
+- **.4–.59: Moderate exposure.** They have room to improvement efficiency that should be fixed. The operation could have some
 data manipulation or the board members could be suppliers.
 
-- **0.7–8: Low exposure.** Low financial risk, expenses are well distributed and low sign of bad management.
+- **.2–.39: Low exposure.** Low financial risk, expenses are well distributed and low sign of bad management.
 
-- **8–1: Very Low exposure.** Hight efficiency and the lowest risk of inconsistencies without anomalies or suspiciuos variables \
+- **0–.19: Very Low exposure.** Hight efficiency and the lowest risk of inconsistencies without anomalies or suspiciuos variables \
 or data manipulation.
 
 

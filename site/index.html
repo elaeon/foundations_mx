@@ -210,42 +210,43 @@ canvas#canvas {
 <div id="header">
   <div class="intro">
     <h1>Mexico Fundations & Trust Visualizer <a href="https://github.com/elaeon/fundations_mx">GitHub</a></h1>
-    <p>This is a research tool that visualizes <b>10017 fundations & trust</b> from the <a href="https://eu2-por-pro-don-net-cons.azurewebsites.net/Consulta/Acceso?ReturnUrl=%2FConsulta%2FTransparencia">SAT Donatarias</a>, covering <b>505,167 beneficiaries</b> across the Mexican's states. Each rectangle's <b>area</b> is proportional to total beneficiaries <b>Color</b> shows the selected metric &mdash; toggle between patrimony, work forcs, volunteers, wages, exposure. Click any tile to view its full data. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring Fundations data visually.</p>
+    <p>This is a research tool that visualizes <b><span id="statTotalFund">&mdash;</span></b> <b>fundations & trust</b> from the <a href="https://eu2-por-pro-don-net-cons.azurewebsites.net/Consulta/Acceso?ReturnUrl=%2FConsulta%2FTransparencia">SAT Donatarias</a>, covering <b><snap id="statTotalBenef">&mdash;</span></b> <b>beneficiaries</b> across the Mexican's states. Each rectangle's <b>area</b> is proportional to total beneficiaries <b>Color</b> shows the selected metric &mdash; toggle between patrimony, work forcs, volunteers, wages, exposure. Click any tile to view its full data. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring Fundations data visually.</p>
     <p><b>LLM-powered coloring:</b> The <a href="https://github.com/elaeon/fundations_mx">source code</a> includes scrapers, parsers, and a pipeline for writing custom LLM prompts to score and color fundations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colors accordingly. You could write a different prompt for any question &mdash; and re-run the pipeline to get a different coloring.</p>
     <details>
       <summary>View the Digital AI Exposure scoring prompt (example)</summary>
       <div class="prompt-box">
-        You are an expert analyst evaluating how fundations and trusts efficiency
-resources managment, also to inspect and decide if they are diverting money or doing
-activities like laundry money.
+      You are an expert analyst evaluating how fundations and trusts efficiency manage
+their resources, also you have to inspect and decide if they are diverting money or doing
+activities in laundring money.
 You will be given a detailed description of an trust from the mexican IRS (SAT), so you have to
 manage some variables names and descriptions in Spanish.
 
-Rate the risk's overall **laundry money and efficiency management** on a scale from 0 to 1, where 0 is high risk
-and 1 is low risk / high efficiency.
+Rate the risk's overall **laundry money and efficiency management** on a scale from 0 to 1, 
+where 0 is low risk / hight efficiency and 1 is highest risk / low efficiency.
 
 Laundry Money measures: how are manage the resources? Consider efficiency \
 risk, coherence and anomalies like in the structured model Fundation Risk & Efficiency Score (FRES).
-You can also use Z-score if is possible.
 
 Keys signals are operative efficiency (E), financial risk (R), internal coherence (C) and anomaly risk (A)
-usually are weigthed FRES=0.3E+0.25R+0.25C+0.2A, but you are free to adjust or update this weights if 
+so you can use a stadistical model to get a good value, so use Z-score if is possible.
+Usually are this variables are weigthed FRES=0.3E+0.25R+0.25C+0.2A, but you are free to adjust or update this weights if 
 the data is viable. You also can build derivates variables like liquidity, leverage and weight of the assets.
+You have to be very critic no matter the fundation's objetives or misions.
 Also, check concisely the history of the board of directors (organo de gobierno).
 
 Use these anchors to calibrate your score:
 
-- **0–0.29: Very Hight exposure.** The fundation or trust is in hight risk or low efficiency.
+- **.8–1: Very Hight exposure.** The fundation or trust is in hight risk or low efficiency.
 
-- **0.3–0.49: Hight exposure.** They are weakness or inconsistencies that could lead to a mayor problem \
+- **.6–.79: Hight exposure.** They are weakness or inconsistencies that could lead to a mayor problem \
 and should be resolved.
 
-- **0.5–0.69: Moderate exposure.** They have room to improvement efficiency that should be fixed. The operation could have some
+- **.4–.59: Moderate exposure.** They have room to improvement efficiency that should be fixed. The operation could have some
 data manipulation or the board members could be suppliers.
 
-- **0.7–0.89: Low exposure.** Low financial risk, expenses are well distributed and low sign of bad management.
+- **.2–.39: Low exposure.** Low financial risk, expenses are well distributed and low sign of bad management.
 
-- **0.9–1: Very Low exposure.** Hight efficiency and the lowest risk of inconsistencies without anomalies or suspiciuos variables \
+- **0–.19: Very Low exposure.** Hight efficiency and the lowest risk of inconsistencies without anomalies or suspiciuos variables \
 or data manipulation.
 
 
@@ -329,7 +330,7 @@ function greenRedCSS(t, alpha) {
 
 function exposureColor(v, a) {
   if (v == null) return `rgba(128,128,128,${a})`;
-  return greenRedCSS(v, a);
+  return greenRedCSS(v/10, a);
 }
 
 function tileColorCSS(d, alpha) {
@@ -481,9 +482,9 @@ function tooltipHighlight(d) {
     const v = d.exposure;
     if (v == null) return "";
     const color = exposureColor(v, 1);
-    return `<span style="color:${color};font-weight:600;">Exposure: ${v}/1</span>` +
+    return `<span style="color:${color};font-weight:600;">Exposure: ${v}/10</span>` +
       `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
-      `<div style="height:100%;width:${v * 100}%;background:${color};border-radius:2px;"></div></div>`;
+      `<div style="height:100%;width:${v * 10}%;background:${color};border-radius:2px;"></div></div>`;
   }
   return "";
 }
@@ -543,8 +544,10 @@ function renderHbars(items) {
 
 function updateStats() {
   const totalBenef = data.reduce((s, d) => s + (d.beneficiaries || 0), 0);
-  document.getElementById("statTotalJobs").textContent = totalBenef;
-
+  const totalFund = data.reduce((s, d) => s + 1, 0);
+  document.getElementById("statTotalJobs").textContent = formatNumber(totalBenef);
+  document.getElementById("statTotalBenef").textContent = formatNumber(totalBenef);
+  document.getElementById("statTotalFund").textContent = totalFund
   if (colorMode === "exposure") updateExposureStats(totalBenef);
 }
 
@@ -559,19 +562,19 @@ function updateExposureStats(totalJobs) {
 
   // Histogram
   const histogram = new Array(11).fill(0);
-  for (const d of data) { if (d.exposure != null && d.beneficiaries) histogram[Math.round(d.exposure*10)] += d.beneficiaries; }
+  for (const d of data) { if (d.exposure != null && d.beneficiaries) histogram[Math.round(d.exposure)] += d.beneficiaries; }
   const maxH = Math.max(...histogram);
   document.getElementById("block3").innerHTML = `<h3>Beneficiaries by exposure</h3>
     <div class="histogram">${histogram.map((c, i) => `<div class="bar" style="height:${Math.max(2, maxH > 0 ? c / maxH * 100 : 0)}%;background:${exposureColor(i, 0.7)}"></div>`).join("")}</div>
-    <div class="hist-labels"><span>0</span><span>0.5</span><span>1</span></div>`;
+    <div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>`;
 
   // Tier breakdown
   const tierDefs = [
-    { label: "Minimal (0.9\u20131)", lo: .0, hi: .05, mid: .1 },
-    { label: "Low (0.7\u20130.89)", lo: .1, hi: .3, mid: .2 },
-    { label: "Moderate (0.5\u20130.69)", lo: .3, hi: .5, mid: .4 },
-    { label: "High (0.3\u20130.49)", lo: .5, hi: .7, mid: .6 },
-    { label: "Very high (0\u20130.29)", lo: .7, hi: 1, mid: .85 },
+    { label: "Minimal (0\u20132)", lo: 0, hi: 1.5, mid: 2 },
+    { label: "Low (3\u20134)", lo: 3, hi: 4, mid: 4.5 },
+    { label: "Moderate (5\u20136)", lo: 5, hi: 6, mid: 5.5 },
+    { label: "High (7\u20138)", lo: 7, hi: 8, mid: 8.5 },
+    { label: "Very high (9\u20131)", lo: 9, hi: 1, mid: 9.5 },
   ];
   const tiers = tierDefs.map(t => {
     let size = 0;

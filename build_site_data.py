@@ -1,7 +1,7 @@
 """
-Build a compact JSON for the website by merging CSV stats with AI exposure scores.
+Build a compact JSON for the website by merging CSV stats with fundations scores.
 
-Reads occupations.csv (for stats) and scores.json (for AI exposure).
+Reads occupations.csv (for stats) and scores.json (for scores).
 Writes site/data.json.
 
 Usage:
@@ -10,46 +10,46 @@ Usage:
 
 import csv
 import json
+import os
 
 
 def main():
-    # Load AI exposure scores
-    with open("scores.json") as f:
+    with open("scores.json", "r") as f:
         scores_list = json.load(f)
-    scores = {s["slug"]: s for s in scores_list}
+    scores = {s["rfc"]: s for s in scores_list}
 
-    # Load CSV stats
-    with open("occupations.csv") as f:
+    with open("fundations.csv", "r") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
 
     # Merge
     data = []
     for row in rows:
-        slug = row["slug"]
-        score = scores.get(slug, {})
+        rfc = row["Rfc"]
+        score = scores.get(rfc, {})
+        if "exposure" not in score: continue
         data.append({
-            "title": row["title"],
-            "slug": slug,
-            "category": row["category"],
-            "pay": int(row["median_pay_annual"]) if row["median_pay_annual"] else None,
-            "jobs": int(row["num_jobs_2024"]) if row["num_jobs_2024"] else None,
-            "outlook": int(row["outlook_pct"]) if row["outlook_pct"] else None,
-            "outlook_desc": row["outlook_desc"],
-            "education": row["entry_education"],
-            "exposure": score.get("exposure"),
+            "title": row["Razón social"],
+            "rfc": rfc,
+            "category": row["Rubro"],
+            "patrimony": int(row["Patrimonio"]),
+            "workforce": int(row["Plantilla laboral"]),
+            "volunteers": int(row["Voluntarios"]),
+            "wages": int(row["Monto salarios"]),
+            "beneficiaries": int(row["Número de beneficiados"]),
+            "exposure": round(score.get("exposure")*10),
             "exposure_rationale": score.get("rationale"),
-            "url": row.get("url", ""),
+            "url": row.get("ref", ""),
         })
 
-    import os
+    
     os.makedirs("site", exist_ok=True)
     with open("site/data.json", "w") as f:
         json.dump(data, f)
 
-    print(f"Wrote {len(data)} occupations to site/data.json")
-    total_jobs = sum(d["jobs"] for d in data if d["jobs"])
-    print(f"Total jobs represented: {total_jobs:,}")
+    print(f"Wrote {len(data)} fundations to site/data.json")
+    total_benef = sum(d["beneficiaries"] for d in data if d["beneficiaries"])
+    print(f"Total beneficiaries represented: {total_benef:,}")
 
 
 if __name__ == "__main__":
