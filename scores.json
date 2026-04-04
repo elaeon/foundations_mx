@@ -1,30 +1,1703 @@
 [
   {
-    "rfc": "FCH1411288L8",
-    "name": "Fundacion Carlos Hank, AC",
-    "model": "qwen/qwen3.6-plus:free",
-    "exposure": 0.86,
-    "rationale": "The foundation demonstrates exceptional financial stability with near-zero leverage and high liquidity, while its scholarship disbursements are transparent, geographically diverse, and strictly aligned with its educational mission. Governance is robust with an unpaid board, and although operational costs rely on contractor fees rather than formal payroll, this is a standard practice that shows no signs of fund diversion or illicit activity. Overall, resource management is highly efficient with minimal exposure to financial anomalies or money laundering risks."
-  },
-  {
     "rfc": "FEP0810247Y2",
     "name": "Fundacion Elena Poniatowska Amor, AC",
     "model": "qwen/qwen3.6-plus:free",
-    "exposure": 0.74,
-    "rationale": "The foundation demonstrates strong operational efficiency with minimal administrative overhead and clear alignment between earmarked donations and cultural projects, though liquidity is moderately tight and board composition shows high familial concentration. Financial coherence is generally sound with no evident anomalies or complex structuring, but the heavy reliance on a single large donation and slightly fragmented expense reporting warrant routine monitoring. Overall, the risk of fund diversion or money laundering is low, reflecting a transparent cultural operation with adequate internal controls."
+    "exposure": 0.48,
+    "rationale": "The exact match between a single corporate donation and the largest project cost raises significant pass-through and potential money laundering concerns, compounded by extreme donor concentration and critically low administrative expenses that suggest financial opacity. While the board includes recognized cultural figures, heavy family ties and the absence of independent oversight weaken governance coherence, and severe understaffing relative to the operational budget indicates structural fragility."
+  },
+  {
+    "rfc": "FCH1411288L8",
+    "name": "Fundacion Carlos Hank, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.27,
+    "rationale": "The trust demonstrates strong financial stability with negligible leverage, high liquidity, and clear alignment between its educational mission and widespread scholarship distribution. However, the concentration of governance within a single family, absence of formal payroll despite significant professional fees, and a large single disbursement to one entity introduce moderate transparency and related-party risks. These factors do not indicate active money laundering but suggest a need for enhanced oversight to ensure operational efficiency and prevent potential resource diversion."
   },
   {
     "rfc": "FUN9301081I5",
     "name": "Fundacion Universidad Nacional Autonoma de Mexico, AC",
     "model": "qwen/qwen3.6-plus:free",
-    "exposure": 0.9,
-    "rationale": "The foundation demonstrates exceptional financial health with high liquidity, negligible leverage, and a transparent, mission-aligned allocation of funds toward UNAM scholarships and institutional projects. Governance is robust with an unpaid, highly reputable board, while operational ratios for fundraising and administration remain well within standard non-profit benchmarks. These factors indicate minimal risk of fund diversion or money laundering, reflecting highly efficient and compliant resource management."
+    "exposure": 0.27,
+    "rationale": "The foundation exhibits strong financial stability with negligible leverage and high liquidity, alongside clear mission alignment and a reputable, unpaid board of prominent figures. However, moderate efficiency concerns stem from substantial unspent cash reserves and elevated fundraising costs (15.8% of donations), which warrant routine monitoring for vendor opacity. Overall, the transparent program allocation and compliant financial ratios indicate low exposure to money laundering risks and sound governance."
   },
   {
     "rfc": "FBB9212149F3",
     "name": "Fundacion Bbva Mexico, AC",
     "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The foundation demonstrates strong financial health with negligible leverage and a transparent, unpaid board, indicating minimal money laundering risk. Operational efficiency is moderately constrained by a high accumulation of liquid assets relative to annual disbursements and notable advertising expenditures. Despite these factors, fund allocation remains coherent with its stated social mission, resulting in low overall exposure."
+  },
+  {
+    "rfc": "MPJ130227JQ4",
+    "name": "Mexicanos Primero Jalisco, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The trust exhibits strong financial health with negligible leverage and a solid equity base, indicating minimal money laundering risk. However, operational efficiency is constrained by excessive idle liquidity, highly repetitive allocation amounts, and significant inconsistencies in cost-per-beneficiary across municipalities. While no direct fund diversion is evident, these tracking and deployment inefficiencies suggest a need for stricter financial oversight and impact-based budgeting."
+  },
+  {
+    "rfc": "FBI1909095PA",
+    "name": "Fundacion Bosques Interlomas, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The foundation exhibits high exposure due to a stark mission-geography mismatch, directing 71% of funds toward construction in the affluent Interlomas area while claiming to serve low-income populations. Operational opacity is severe, with zero administrative expenses, no paid staff to manage a 1.68M MXN project, and missing beneficiary data for the construction, indicating high anomaly and potential diversion risks."
+  },
+  {
+    "rfc": "FTM981104540",
+    "name": "Fundacion Teleton Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.18,
+    "rationale": "The foundation demonstrates robust financial stability with negligible leverage, high liquidity, and a program expense ratio exceeding 90%, indicating strong operational efficiency aligned with its rehabilitation mission. Administrative and fundraising costs remain well within international NGO benchmarks, and transactional records show no structural anomalies, round-tripping, or suspicious cross-border flows typical of money laundering. While the concentration of high-profile, unpaid board members and substantial idle cash reserves generating interest warrant ongoing governance monitoring, the overall risk profile remains very low."
+  },
+  {
+    "rfc": "OSI000518CW3",
+    "name": "Orquesta Sinfonica Infantil de Nezahualcoyotl, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.63,
+    "rationale": "The trust exhibits high financial risk with a 90.5% leverage ratio and liquidity below 1, compounded by governance concerns due to shared surnames between the Director and Treasurer. Significant budget portions are allocated to vaguely categorized 'general expenses' and maintenance costs that exceed fixed asset values, raising strong anomaly flags. While programmatic spending aligns with its cultural mission, these structural weaknesses and reporting inconsistencies indicate a high exposure to inefficiency and potential resource diversion."
+  },
+  {
+    "rfc": "BRU170525539",
+    "name": "Bomberos de Rescate Uruapan, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.49,
+    "rationale": "The trust exhibits moderate exposure driven by extreme donor concentration (99.5% from a single corporate entity) and a family-controlled board lacking independent oversight. Operational anomalies include a disproportionate 37% allocation to fuel expenses and a complete absence of volunteers, which is highly atypical for a rescue organization. Coupled with vague 'honorarios' and 'generales' line items, these factors suggest potential resource diversion and warrant enhanced financial auditing."
+  },
+  {
+    "rfc": "SUV181105UD1",
+    "name": "Salva Una Vida-dona-arte, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.78,
+    "rationale": "The trust shows high exposure due to a critical mismatch between its registered 'cultural' activity and its health-focused mission, alongside disproportionate spending on real estate rental (45% of expenses) and unexplained professional fees despite zero formal payroll. These structural anomalies, combined with a low direct impact per beneficiary and expenses exceeding reported donations, strongly suggest poor resource efficiency and elevated risk of fund diversion."
+  },
+  {
+    "rfc": "CMO161112LA4",
+    "name": "Caritas Morelos, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.51,
+    "rationale": "The trust exhibits high financial vulnerability with a 95.6% liability-to-asset ratio and weak liquidity, compounded by an unpaid board lacking disclosed financial oversight capacity. While operational efficiency is strong with ~86% of resources directed to beneficiaries, the disproportionate in-kind public donations and unitemized corporate fees create moderate transparency and valuation anomalies that warrant scrutiny for potential fund diversion."
+  },
+  {
+    "rfc": "BTE870227MB4",
+    "name": "Bona Terra, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.47,
+    "rationale": "The trust demonstrates strong liquidity and allocates a substantial portion of its revenue to scholarships, reflecting baseline operational efficiency. However, compensating board members with over $11 million MXN in salaries is highly irregular for a Mexican civil association and strongly indicates potential self-dealing or disguised profit distribution. Combined with significant, poorly itemized expenditures in professional fees, travel, and miscellaneous categories, these governance and reporting anomalies elevate the risk of resource diversion and warrant targeted regulatory scrutiny."
+  },
+  {
+    "rfc": "CCU160217FJ2",
+    "name": "Ciudad y Cultura, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The entity exhibits a severe mismatch between its broad cultural mandate and its operational reality, showing zero staff, zero payroll, and minimal assets (~36k MXN), which strongly suggests a dormant or shell structure. The single-director governance model with zero compensation and no verifiable operational history concentrates control and obscures accountability, raising significant coherence and anomaly risks. Consequently, it presents very high exposure due to extreme inefficiency and elevated money laundering vulnerability."
+  },
+  {
+    "rfc": "CGE1606205W8",
+    "name": "Cultivando Genero, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.52,
+    "rationale": "The organization shows moderate exposure due to disproportionate administrative spending (stationery represents 66% of reported expenses), exact earmarking of foreign donations to a single project, and a complete absence of fixed assets despite a 34-person workforce and nine years of operation. While financial risk is low with zero liabilities and high liquidity, the unpaid board structure and unusually low reported payroll raise governance gaps and potential data manipulation concerns that warrant closer audit scrutiny."
+  },
+  {
+    "rfc": "CHO1003027R3",
+    "name": "Colegio Horizontes, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The trust demonstrates strong financial stability with negligible leverage and high liquidity, but exhibits moderate exposure due to significant anomalies, notably a 5.19M MXN civil indemnity payout and a 2.35M MXN donation outflow that exceeds total donations received. These irregularities, alongside minor payroll reporting discrepancies, suggest potential inefficiencies or related-party transactions that require audit verification, though no definitive money laundering patterns are confirmed."
+  },
+  {
+    "rfc": "CCC0809198Z1",
+    "name": "Fundacion de la Caminata Contra el Cancer, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The foundation shows high exposure due to a significant financial mismatch where total expenses (280,607 MXN) exceed reported income and equity, alongside disproportionately high allocations to vague categories like stationery and technical assistance despite zero paid staff. While some spending aligns with its cancer-support mission, the absence of payroll, reliance on a single public donor, and unexplained operational outflows indicate weak internal coherence and elevated financial anomaly risk."
+  },
+  {
+    "rfc": "ICA190320A26",
+    "name": "International Chaplain Agents In Favour Of Social Peace, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The entity exhibits critical red flags including a zero balance sheet, an exact 1:1 match between in-kind public donations and operational expenses, and zero administrative costs, which is operationally implausible. The vague classification of 'general construction expenses' alongside a single unpaid board member and no financial reserves strongly suggests a pass-through structure with high potential for resource diversion. These anomalies, combined with the lack of operational transparency, place the trust in the highest risk category."
+  },
+  {
+    "rfc": "SAD111201HE0",
+    "name": "Santuario Animal del Desierto, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The organization exhibits high operational efficiency with over 95% of expenditures directly tied to verifiable animal welfare services, minimal administrative overhead (~3.4%), and a clear geographic and programmatic alignment with its stated mission. Financial risk remains low despite a modest current ratio, as liabilities are comfortably covered by strong equity and fixed assets, while the unpaid board structure eliminates self-dealing or salary diversion risks. Minor governance observations regarding familial ties and low short-term liquidity are outweighed by transparent, itemized expense reporting and consistent donation-to-program allocation."
+  },
+  {
+    "rfc": "BAE051123JA8",
+    "name": "Banco de Alimentos de Ensenada, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.43,
+    "rationale": "The organization maintains strong solvency and directs 66% of spending to core food distribution, but exhibits moderate risk due to 27% of expenses being vaguely classified as 'otros gastos de operaci\u00f3n' and the complete absence of volunteers, which is highly atypical for a food bank. Additionally, the exact match between individual cash donations and recovery fees suggests potential accounting overlap or misclassification, warranting closer audit scrutiny despite low financial leverage and an unpaid board."
+  },
+  {
+    "rfc": "BAT960828GW8",
+    "name": "Banco de Alimentos de Tijuana, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.22,
+    "rationale": "The trust exhibits strong financial stability with high liquidity, minimal leverage, and a transparent 1:1 alignment between donation inflows and direct aid distribution. Operational efficiency is high, featuring low administrative overhead and a standard unpaid board, though the substantial 'cuotas de recuperaci\u00f3n' revenue stream warrants routine oversight to confirm it strictly offsets logistics rather than masking quasi-commercial activity."
+  },
+  {
+    "rfc": "CME630920JM4",
+    "name": "Colegio Mexico de Ensenada, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The entity demonstrates exceptional operational efficiency and financial stability, characterized by a minimal administrative expense ratio (~3.9%), negligible leverage, and a highly liquid balance sheet. Revenue is primarily driven by transparent tuition fees rather than opaque donations, and all expenditures align coherently with its educational mission without indicators of money laundering or resource diversion. Although the governance reporting lists only a single administrator, the transparent compensation and absence of financial irregularities maintain a very low overall risk profile."
+  },
+  {
+    "rfc": "EPR0609141M1",
+    "name": "Ecology Project, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.34,
+    "rationale": "The organization demonstrates strong mission-program alignment and an unpaid board, minimizing self-dealing risks, but shows moderate exposure due to heavy reliance on foreign funding (98.8%) and elevated travel and contractor expenses. While liquidity is tight and some standardized cost allocations lack granular transparency, the overall financial structure and operational coherence indicate low money laundering risk and acceptable management efficiency."
+  },
+  {
+    "rfc": "FPU231205MJA",
+    "name": "Fundacion Pulmo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "Despite strong liquidity and negligible leverage, the foundation shows moderate exposure due to a high concentration of resources on a single-beneficiary medical project and a lack of transparency regarding the primary donation recipient (RFC FMA140207EI4). The absence of paid personnel and an unpaid two-member board managing substantial funds, combined with minor discrepancies between reported donations and project allocations, indicate operational coherence gaps and potential data manipulation risks that require closer scrutiny."
+  },
+  {
+    "rfc": "ICA651113GR9",
+    "name": "Instituto del Carmen, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.58,
+    "rationale": "The trust demonstrates strong financial stability with high liquidity and negligible leverage, but operational reporting shows significant inconsistencies, including zero administrative expenses, a disproportionately high maintenance budget (47.7%), and missing core educational revenue. Governance is structurally weak with only one director listed and no historical board data, elevating coherence and anomaly risks that suggest potential inefficiency or resource diversion through opaque operational contracts."
+  },
+  {
+    "rfc": "MDC1704182H3",
+    "name": "Movimiento por la Democracia en Chiapas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The entity exhibits critical inefficiencies and high anomaly risk, as 100% of its income is classified as administrative expenses despite reporting zero payroll, zero volunteers, and no direct programmatic spending. The exact mathematical match between total income and expenses (41,390), combined with duplicate board records and a complete lack of operational footprint, strongly indicates artificial financial balancing or potential resource diversion rather than legitimate social assistance."
+  },
+  {
+    "rfc": "MUC190319GT9",
+    "name": "Manos Unidas por Chiapas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.51,
+    "rationale": "The trust exhibits moderate exposure due to critical governance and operational anomalies, notably a board member registered under the organization's exact name and completely missing mission/values documentation. While financial risk is negligible with zero liabilities and a reasonable administrative expense ratio, the exclusive reliance on in-kind donations without corresponding logistics, storage, or distribution costs raises significant coherence and valuation concerns. These structural inconsistencies suggest potential inefficiencies and warrant enhanced scrutiny of resource tracking, asset valuation, and actual program delivery."
+  },
+  {
+    "rfc": "VMA110402EE5",
+    "name": "Voces Mesoamericanas, Accion con Pueblos Migrantes, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The trust exhibits high exposure due to a structurally anomalous administrative cost ratio (1.6%) artificially suppressed by inflating travel and vague 'other expenditures' categories, which are classic diversion red flags. Heavy reliance on foreign funding (82%) combined with excessive liquidity (24x current ratio) and zero board compensation indicates weak internal controls and potential resource misallocation despite mission-aligned reporting."
+  },
+  {
+    "rfc": "FCM180920JT9",
+    "name": "Fundacion Chiapaneca para Mujeres Migrantes, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.4,
+    "rationale": "The unpaid board and absence of independent oversight, combined with a perfect 1:1 match between donations and expenses with zero administrative costs, suggest potential pass-through operations or data manipulation. Despite high program allocation, the reliance on a single corporate donor, minimal asset reserves, and vague expense categorization indicate moderate financial and operational risk."
+  },
+  {
+    "rfc": "PBT910610SP2",
+    "name": "Patronato de Bomberos de Tapachula, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The trust exhibits severe operational inefficiency and financial anomalies, with direct aid representing only ~10% of total expenses while 75% is allocated to vaguely defined 'supplies and maintenance.' Reported donations fall drastically short of total expenditures, and the complete absence of payroll or registered volunteers contradicts the high operational costs, raising strong suspicions of fund diversion or off-book contracting. These structural inconsistencies and lack of financial transparency place the entity in a very high exposure category for money laundering and mismanagement."
+  },
+  {
+    "rfc": "ATA050221860",
+    "name": "Asentamientos Tarahumares, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The trust exhibits high operational inefficiency with approximately 80% of funds allocated to administrative and payroll costs versus only 37% directed to beneficiaries, compounded by an unsustainable ratio of 8 employees serving just 15 individuals. Governance is severely compromised by a single-member board lacking oversight mechanisms, while vague 'otros' expense categories and disproportionate overhead raise significant anomaly and potential diversion risks."
+  },
+  {
+    "rfc": "BAC0404218W9",
+    "name": "Banco de Alimentos de la Sierra Tarahumara, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.3,
+    "rationale": "The foundation demonstrates strong financial stability with negligible liabilities and high liquidity, indicating low financial risk. However, operational coherence is compromised by the complete absence of recorded payroll despite claims of volunteer staffing, alongside a notable discrepancy between the reported value of distributed aid and actual cash expenses. While no direct money laundering red flags are evident, these reporting inconsistencies and reliance on unverified unpaid labor suggest moderate efficiency risks requiring improved transparency."
+  },
+  {
+    "rfc": "CPA971204D77",
+    "name": "Caritas Parral, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.55,
+    "rationale": "The foundation exhibits moderate exposure due to a low direct program spending ratio (~24% of total income) and a mathematically inconsistent per-beneficiary allocation (~32 MXN biweekly), which raises concerns about resource diversion or inaccurate reporting. While financial risk is negligible given minimal liabilities and strong liquidity, the accumulation of substantial cash reserves without proportional mission deployment indicates operational inefficiency. Governance risks are mitigated by an unpaid, nationally-based board, but the lack of volunteer engagement and high administrative overhead relative to direct aid warrant closer scrutiny."
+  },
+  {
+    "rfc": "PBA1709094X5",
+    "name": "Patronato de Bomberos Abelardo Amaya, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.12,
+    "rationale": "The trust exhibits exceptional financial health with near-zero leverage, high liquidity, and 100% operational expense allocation directly supporting its firefighting mission. The unpaid volunteer board, absence of administrative overhead, and strictly domestic transactions demonstrate strong internal coherence and negligible anomaly risk. The precise alignment between reported donations and expenses reflects transparent grant management rather than manipulation, resulting in very low exposure."
+  },
+  {
+    "rfc": "UAC0401217L1",
+    "name": "Universidad Anahuac de Chihuahua, SC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The entity reports zero staff, zero volunteers, and zero payroll, which directly contradicts its stated educational mission and indicates a dormant or shell structure. The extreme concentration in fixed assets with negligible liabilities and an anonymized board member suggests it functions primarily as a real estate holding or asset protection vehicle rather than an active charitable organization. These structural anomalies and lack of operational transparency result in very high exposure to inefficiency and potential financial misuse."
+  },
+  {
+    "rfc": "AII7004281HA",
+    "name": "Albergue Infantil Ines Maria Gasca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.4,
+    "rationale": "The trust exhibits moderate exposure due to high administrative and consulting costs (~44% of total expenses), which reduces operational efficiency despite strong liquidity and negligible leverage. While the unpaid board and mission-aligned spending indicate internal coherence, the dual treasurer roles, significant fixed-asset liquidation, and opaque advisory fees introduce opacity that warrants scrutiny for potential related-party transactions or data manipulation. No direct money laundering indicators are present, but the heavy reliance on public funding and lack of granular expense breakdowns sustain a moderate risk profile."
+  },
+  {
+    "rfc": "BEC061030Q4A",
+    "name": "Becalos, SIN TIPO DE SOCIEDAD",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "High liquidity and minimal administrative overhead indicate strong operational efficiency, but the allocation of 11.2M MXN to a generic foreign RFC (XEXX010101000) and a zero-employee model reliant on heavy outsourcing raise transparency and anomaly concerns. Corporate-dominated governance with zero direct payroll suggests potential related-party service routing, warranting closer audit scrutiny despite negligible financial leverage."
+  },
+  {
+    "rfc": "CRM6702109K6",
+    "name": "Cruz Roja Mexicana, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The organization demonstrates high operational efficiency and financial stability, with low leverage (12.2%), strong liquidity, and expenditures heavily concentrated in mission-critical areas like payroll, medical supplies, and emergency response. The extensive governance list reflects a consolidated national federation with unpaid board members and transparent, project-specific allocation of international grants, showing no signs of self-dealing or fund diversion. Financial coherence is strong, with diverse income streams clearly matched to documented operational costs, resulting in minimal anomaly or money laundering risk."
+  },
+  {
+    "rfc": "DAN850617PV9",
+    "name": "Drogadictos Anonimos, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.2,
+    "rationale": "The trust exhibits strong financial stability with a liquidity ratio of 5.5x, negligible leverage, and program expenditures that directly align with its multi-state rehabilitation mission. Although the reliance on patient recovery fees and in-kind donations warrants standard valuation transparency, there are no structural anomalies, suspicious outflows, or disproportionate executive compensation indicative of fund diversion or money laundering. Operational efficiency is high, placing the entity in a low-risk category."
+  },
+  {
+    "rfc": "EEC970905LJ8",
+    "name": "Fundacion Uvm, SC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The entity shows severe operational incoherence, directing nearly all funds to administrative and non-deductible expenses while reporting zero staff, volunteers, or scholarship disbursements despite its stated mission. Financial indicators reveal negative working capital, disproportionately high banking commissions, and a corporate-only board structure, pointing to a shell-like vehicle with poor resource allocation. These structural anomalies, combined with unbalanced accounting figures and lack of transparent programmatic spending, indicate very high exposure to fund diversion and potential money laundering."
+  },
+  {
+    "rfc": "FAZ9702271S7",
+    "name": "Fundacion Azteca, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.8,
+    "rationale": "The entity reports zero staff, volunteers, and payroll despite being registered for assistance activities, indicating severe operational incoherence and potential shell status. Governance is concentrated in a single board member with no disclosed history, while blank mission and values fields obscure its actual purpose. Although liquidity appears adequate, these structural anomalies and complete lack of operational transparency strongly indicate high exposure to resource diversion or money laundering."
+  },
+  {
+    "rfc": "FCS890710CW5",
+    "name": "Fundacion Carlos Slim, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.51,
+    "rationale": "While traditional money laundering indicators are absent, the foundation shows moderate exposure due to an extremely low charitable payout ratio relative to its massive asset base and high financial volatility from multi-billion peso market and FX write-offs. Governance is entirely family-controlled with notable reporting anomalies, including zero monetary allocations to listed programs and inflated beneficiary figures, indicating operational inefficiencies and potential mission drift rather than active social impact."
+  },
+  {
+    "rfc": "FEM960328FE1",
+    "name": "Fundacion Educa Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.41,
+    "rationale": "Despite strong liquidity and a low administrative overhead ratio, the foundation exhibits moderate exposure due to 21.5 million MXN in unclassified 'Otros' operational expenses and 5.2 million MXN in individual fees that lack granular justification. The extreme variance in cost-per-beneficiary across programs, combined with a zero-compensation board of high-profile individuals and pass-through grants to 73 external organizations, introduces notable transparency gaps and potential layering risks that warrant closer regulatory scrutiny."
+  },
+  {
+    "rfc": "FGM9812144L4",
+    "name": "Fundacion Grupo Modelo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.52,
+    "rationale": "The foundation exhibits moderate exposure due to a significant mismatch between reported incoming donations (~$3.5M) and outgoing grants (~$14.1M), compounded by pervasive row duplication across all financial tables that severely undermines reporting integrity. Over 90% of disbursements target corporate-aligned alcohol responsibility initiatives rather than broad humanitarian objectives, raising internal coherence and potential related-party transaction concerns. While administrative overhead is minimal, the zero-payroll structure and high leverage indicate heavy reliance on parent-company resources, warranting stricter audit scrutiny for fund diversion."
+  },
+  {
+    "rfc": "FMR110721874",
+    "name": "Fundacion Mvs Radio, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.78,
+    "rationale": "The foundation exhibits high exposure due to a severe mismatch between its ~14.2M MXN in donations and only ~2.8M MXN directly distributed to beneficiaries, with over 86% allocated to operational and administrative costs despite employing just two paid staff. This structural anomaly, combined with an unpaid board lacking transparent oversight and highly fragmented geographic disbursements, strongly suggests potential fund diversion or severe operational inefficiency. Consequently, financial coherence and resource allocation fall well below acceptable standards for a charitable trust."
+  },
+  {
+    "rfc": "FMS131031TU4",
+    "name": "Fundacion Manos de Seda, AC",
+    "model": "qwen/qwen3.6-plus:free",
     "exposure": 0.92,
-    "rationale": "The foundation exhibits exceptional operational efficiency and financial stability, characterized by minimal leverage (~3.3%), high liquidity, and a transparent allocation of resources toward nationwide educational and disaster relief programs. The unpaid, high-profile board of directors and reasonable administrative overhead strongly mitigate diversion risks, while the detailed geographic distribution of scholarships and institutional grants demonstrates high internal coherence with zero anomalous or suspicious financial patterns."
+    "rationale": "The foundation reports zero assets, liabilities, payroll, and personnel, creating a complete operational and financial void that starkly contradicts its stated educational and social mission. The board is composed exclusively of family members with no compensation, while the total absence of economic activity strongly indicates a dormant shell entity highly susceptible to being used for tax optimization, fund channeling, or money laundering fronts."
+  },
+  {
+    "rfc": "FOR8910316Q5",
+    "name": "Fundacion Olga y Rufino Tamayo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.18,
+    "rationale": "The foundation demonstrates high operational efficiency with a low administrative overhead (~9.7%) and near-perfect alignment between received donations and mission-directed expenditures. Financial metrics indicate strong solvency, minimal leverage, and healthy liquidity, with income streams consistent with legitimate museum operations. While foreign donations and representation expenses require standard AML monitoring, no structural anomalies, opaque transactions, or governance red flags are evident."
+  },
+  {
+    "rfc": "FTA9709083R7",
+    "name": "Fundacion Tv Azteca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.24,
+    "rationale": "The foundation demonstrates high operational efficiency with administrative overhead under 3% and strong financial stability marked by negligible leverage and high liquidity. Moderate exposure arises from large, poorly detailed expense categories (e.g., ~58.5M in fees and ~69M in other costs) and a corporate-linked board, which require closer audit for potential related-party transactions. Overall, the strict alignment between stated social objectives, program disbursements, and financial flows indicates minimal money laundering risk despite some transparency gaps."
+  },
+  {
+    "rfc": "FVT230221LE2",
+    "name": "Fundacion Va por Todos, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.75,
+    "rationale": "The trust exhibits high exposure due to a critical accounting imbalance where reported liabilities and equity exceed total assets, alongside operational expenses surpassing donation income. Zero administrative costs and a board composed entirely of family members with no compensation raise significant governance and transparency red flags, indicating potential resource diversion or inadequate financial controls."
+  },
+  {
+    "rfc": "FWM030319BI1",
+    "name": "Fundacion Wal-mart de Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.63,
+    "rationale": "The foundation presents high financial risk due to a critical accounting imbalance where reported liabilities and equity vastly exceed total assets, alongside severely low liquidity and a corporate-only board lacking independent oversight. Donation patterns show high concentration to few entities and implausibly low per-beneficiary allocations that suggest potential data manipulation or inefficient fund routing. While administrative overhead remains within acceptable NGO thresholds, these structural anomalies and governance opacity significantly elevate exposure to mismanagement and money laundering risks."
+  },
+  {
+    "rfc": "LAN2004015BA",
+    "name": "Libertad Animal, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.45,
+    "rationale": "While financial health is strong with zero liabilities and a high allocation of funds to mission-related animal care, the complete absence of reported staff or volunteers contradicts the operational scale and raises internal coherence concerns. Significant expenditures in broad categories like 'Honorarios' and 'Mantenimiento' lack transparency, creating moderate anomaly and potential diversion risks. The reliance on a single donor classification further limits traceability, warranting closer scrutiny despite the positive equity position."
+  },
+  {
+    "rfc": "RDA180425MY8",
+    "name": "Rescata, Dona y Ayuda, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The entity shows a critical disconnect between its ambitious mission and zero operational capacity, reporting no employees, volunteers, or payroll despite claiming large-scale food recovery operations. Financial anomalies are severe, as reported expenses drastically exceed minimal income and are concentrated in vague categories like 'honorarios' and 'otros gastos,' strongly suggesting potential fund diversion or shell activity. Coupled with a two-person unpaid board and no transparent funding sources, this indicates very high exposure to money laundering and operational inefficiency."
+  },
+  {
+    "rfc": "UMO0712205W7",
+    "name": "Unidos por la Monta\u00f1a, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.62,
+    "rationale": "The foundation exhibits high exposure due to 87% of expenses being classified under the highly opaque 'Otros proyectos' category, combined with a 97% reliance on a single corporate donor. Familial ties on the board, a significant gap between reported income and expenditures, and suspiciously low per-beneficiary costs strongly suggest potential resource diversion or data manipulation despite adequate liquidity."
+  },
+  {
+    "rfc": "AMA890629U11",
+    "name": "Alianza de Maestros, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The organization exhibits high exposure due to severe operational opacity, notably 70,574 MXN in unspecified 'Otros Operativos' and the heavy allocation of PR, web, and press costs as direct program expenses, which distorts efficiency metrics. Despite robust liquidity and negligible leverage, the complete absence of paid staff alongside substantial operational outflows and a minimal two-person board signals weak internal controls and potential informal resource diversion. These structural inconsistencies, inflated beneficiary counts, and vague expense categorization significantly elevate money laundering and mismanagement risks."
+  },
+  {
+    "rfc": "CLD220218NR5",
+    "name": "Colibri por la Legitima Defensa, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The organization demonstrates strong liquidity and negligible debt, indicating low financial risk, but exhibits a high salary-to-income ratio (85%) and a slight operational deficit that warrants monitoring. While programmatic spending aligns with its feminist self-defense mission, the highly fragmented expense allocation and inconsistent cost-per-beneficiary metrics suggest moderate operational inefficiencies. The unpaid board structure is typical for small NGOs but, combined with concentrated payroll expenses, requires enhanced transparency to rule out indirect compensation or resource diversion."
+  },
+  {
+    "rfc": "CTA121019TN1",
+    "name": "La Cultura de la Tauromaquia, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The organization shows high financial risk and low operational efficiency, with 87.6% of its total expenses concentrated in a single 'legal defense' line item and zero fixed assets or paid staff despite managing nearly 2.8M MXN in donations. The board and payroll report zero salaries, which raises internal coherence and anomaly concerns regarding potential off-book compensation or related-party transactions. While programmatic spending is geographically dispersed, the heavy reliance on corporate donations, lack of administrative cost transparency, and disproportionate legal spending indicate significant exposure to resource diversion and weak financial controls."
+  },
+  {
+    "rfc": "DAM190910G27",
+    "name": "Dar Agua y Mas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The foundation demonstrates strong operational efficiency with a 94.6% program-to-expense ratio and minimal administrative overhead, but exhibits moderate risk due to a large, undetailed 'direct project expenses' category and an entirely foreign, unpaid board lacking local oversight. High dependency on public funding and volunteer labor, alongside significant travel costs across remote regions, introduces transparency and governance vulnerabilities that warrant closer scrutiny for potential resource diversion."
+  },
+  {
+    "rfc": "FIM030506EV2",
+    "name": "Fundacion Imss, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "While the foundation exhibits strong liquidity and minimal leverage, the heavy reliance on public funding, substantial unitemized professional fees (MXN 33M), and elevated travel costs raise transparency and potential diversion concerns. The politically prominent board and significant in-kind donations further moderate the score, indicating adequate operational efficiency but requiring stricter audit controls to mitigate related-party and anomaly risks."
+  },
+  {
+    "rfc": "FMP131125I72",
+    "name": "Fundacion Monte de Piedad, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.24,
+    "rationale": "The foundation demonstrates high programmatic efficiency, allocating over 93% of resources directly to grants with minimal administrative overhead and negligible financial leverage. However, the complete absence of payroll, fixed assets, and direct operational staff indicates a pass-through grant-making model, which introduces moderate coherence and anomaly risks regarding third-party oversight and execution verification. While no explicit money laundering patterns or fund diversion indicators are present, the conduit-like structure requires standard monitoring to ensure full compliance and resource traceability."
+  },
+  {
+    "rfc": "FPD180314DX2",
+    "name": "Fundacion Pro Danza, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.48,
+    "rationale": "The foundation exhibits moderate exposure due to a critical accounting mismatch between negligible fixed assets (1 MXN) and reported depreciation expenses, alongside a substantial idle cash reserve that contrasts with low mission-aligned spending. High travel and customs costs relative to total income, combined with vague honorarios and an entirely unpaid board, raise internal coherence and potential related-party transaction concerns. While financial solvency is strong, the lack of transparent fund deployment and structural anomalies warrant closer regulatory scrutiny."
+  },
+  {
+    "rfc": "FTE951227NS5",
+    "name": "Fundacion Telmex, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.46,
+    "rationale": "The foundation exhibits moderate exposure due to extreme asset concentration (34.1B MXN) paired with relatively low social deployment efficiency, alongside corporate-aligned sports sponsorships that blur the line between charitable assistance and brand promotion. While financial risk is negligible given minimal liabilities and high liquidity, the heavy reliance on interest income and potential corporate benefit extraction indicate structural inefficiencies and mission coherence gaps. Board compensation and payroll are within standard ranges, but the mismatch between stated assistance objectives and actual spending patterns warrants closer regulatory oversight."
+  },
+  {
+    "rfc": "TFL100215QU3",
+    "name": "Taller Flora, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.86,
+    "rationale": "The entity exhibits severe operational and financial incoherence, with a 14-year history, zero payroll, no fixed assets, and only ~4,600 MXN in current assets despite claiming nationwide artisan training programs. This extreme mismatch, combined with an unpaid two-person board and complete reliance on volunteers, strongly indicates a dormant or shell structure with high anomaly and potential money laundering exposure. The absence of verifiable operational capacity and minimal capitalization significantly elevates both efficiency and compliance risks."
+  },
+  {
+    "rfc": "UCS941021DY0",
+    "name": "Universidad del Claustro de Sor Juana, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.48,
+    "rationale": "The trust exhibits moderate exposure primarily because 92% of total expenses are aggregated under a highly opaque 'Otros gastos' category, severely limiting fund traceability and raising anomaly flags for potential inefficiency or related-party transactions. While financial fundamentals are robust with low leverage, strong liquidity, and exact donation-to-program matching, the substantial overlap between governing board and executive roles, alongside high executive compensation, indicates governance inefficiencies that require stricter transparency controls."
+  },
+  {
+    "rfc": "CFE2003175J4",
+    "name": "Circulo Feminista, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.77,
+    "rationale": "The trust exhibits high exposure driven by a critical accounting imbalance (assets significantly lower than liabilities plus equity), a severe operational deficit, and a statistically anomalous 0% administrative cost structure despite a 1.2M MXN payroll and multi-state operations. While project allocations align with its stated mission, the extreme payroll concentration, lack of overhead transparency, and absence of disclosed board tenure history strongly indicate potential cost misclassification or hidden financial dependencies requiring immediate forensic review."
+  },
+  {
+    "rfc": "DCI151120C69",
+    "name": "Data Civica, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The organization presents moderate exposure due to a 65% reliance on foreign funding, a 51% unspent surplus indicating low deployment efficiency, and the inclusion of recovery fees that complicate the donation-to-expense trail. Although administrative overhead is minimal and the unpaid board consists of recognized professionals, the heavy geographic concentration in affluent urban areas contrasts with its broader regional mission, suggesting potential inefficiencies in resource allocation. These factors, combined with high payroll concentration, warrant closer monitoring for compliance and operational transparency."
+  },
+  {
+    "rfc": "FDS0506076U9",
+    "name": "Fundacion del Dr. Simi, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The foundation exhibits strong financial stability with a healthy liquidity ratio (2.81) and low leverage, while maintaining high operational efficiency through extensive volunteer mobilization and nationwide aid distribution. Nevertheless, the concentration of large cash disbursements to a limited number of entities, alongside non-specific expense lines and a founder-controlled unpaid board, introduces minor governance and transparency vulnerabilities. Overall, these elements place the trust in a low-risk category, though targeted audits on major cash transfers and expense categorization are recommended."
+  },
+  {
+    "rfc": "FKA1706238P8",
+    "name": "Fundacion Kasuga, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.49,
+    "rationale": "The foundation exhibits moderate exposure due to a highly concentrated family board, an undefined mission, and disproportionate fixed assets with low yield, indicating potential inefficiency or asset parking. High professional fees relative to a single-employee payroll and opaque donation distributions raise internal coherence and anomaly concerns, despite strong solvency and minimal leverage."
+  },
+  {
+    "rfc": "FML151014RF5",
+    "name": "Fundacion Mas Libros Menos Armas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.93,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and volunteers, rendering it operationally inert and completely misaligned with its stated cultural mission. This absolute absence of financial and human capital strongly indicates a dormant or shell structure with high anomaly and money laundering exposure. The minimal board composition and lack of any economic footprint further confirm severe inefficiency and structural incoherence."
+  },
+  {
+    "rfc": "FSP230816846",
+    "name": "Fundacion sin Pulgas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.94,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and volunteers, which starkly contradicts its resource-intensive animal rescue mission and indicates a dormant or shell structure. The board consists entirely of family members with no compensation or independent oversight, raising significant governance and coherence concerns. This complete lack of operational and financial footprint suggests very high exposure to inefficiency and potential misuse for tax optimization or illicit fund routing."
+  },
+  {
+    "rfc": "GDA050228KH7",
+    "name": "Gente por la Defensa Animal, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.31,
+    "rationale": "The organization demonstrates high operational efficiency with over 93% of funds directed to mission-related veterinary expenses and zero administrative salaries, indicating strong program focus. However, financial risk is elevated due to a reported deficit, negative net equity, and low liquidity, alongside a minor accounting inconsistency in the patrimony figure. Overall, there are no red flags for money laundering, as transactions are domestic, transparent, and align closely with stated objectives."
+  },
+  {
+    "rfc": "HHM890914F16",
+    "name": "Habitat para la Humanidad Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The foundation demonstrates high operational efficiency with minimal administrative costs and clear alignment between its housing mission and rural project expenditures. However, a high liability-to-asset ratio (71%) and significant reliance on foreign corporate donations introduce moderate financial and AML compliance risks that warrant monitoring. Internal coherence is strong, featuring an unpaid board and consistent payroll, resulting in a low overall exposure profile."
+  },
+  {
+    "rfc": "ICG130222IL7",
+    "name": "Casa Gallina, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.7,
+    "rationale": "The organization exhibits high anomaly risk with 96.7% of expenses classified under a vague 'Otros' category and a suspicious exact numerical match between donation and related income streams. Heavy reliance on foreign funding (64%) combined with zero board compensation and opaque expense allocation signals weak internal controls and potential resource diversion, despite strong liquidity and minimal leverage."
+  },
+  {
+    "rfc": "NHU180808QG9",
+    "name": "Naj Hub, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "While the trust demonstrates perfect balance sheet alignment and a high program expenditure ratio, severely underreported payroll and zero administrative expenses raise significant anomaly risks regarding potential off-book compensation or cost misclassification. The single-donor dependency and entirely unpaid board further indicate moderate exposure to operational inconsistencies and potential resource diversion."
+  },
+  {
+    "rfc": "PAS830414D96",
+    "name": "El Pobrecillo de Asis, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.47,
+    "rationale": "The trust exhibits moderate exposure due to critically low liquidity (7,022 MXN) against high leverage (1.62 debt-to-equity) and a per-beneficiary cost (~736 MXN/month) that is unrealistically low for its stated comprehensive care mission. Exact donation-to-destination matching, vague expense categories like 'art\u00edculos personales', and an entirely unpaid board suggest rigid reporting practices and potential opacity in financial oversight."
+  },
+  {
+    "rfc": "QNT091009I96",
+    "name": "Por los Que No Tienen Voz, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.73,
+    "rationale": "The organization demonstrates high financial and operational risk due to a severe funding-to-expense mismatch (32,650 MXN in donations vs. 859,692 MXN in costs) and an accounting imbalance where liabilities exceed assets by nearly 4.7x. Operating with zero staff or volunteers while incurring substantial rent and professional fees, alongside a two-member family board receiving no compensation, strongly suggests potential fund commingling or shell-entity structuring. These anomalies, combined with a stated ecological mission that contradicts actual animal rescue expenditures, place the trust in a high-exposure category for inefficiency and money laundering risks."
+  },
+  {
+    "rfc": "TAV110816BMA",
+    "name": "Te Apoyamos Vecinos, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.94,
+    "rationale": "The complete absence of assets, payroll, and staff directly contradicts the stated mission of active in-kind aid distribution, indicating severe operational inefficiency and potential dormancy. The single-member governance structure and zero financial activity strongly suggest a shell entity with high anomaly risk, raising significant concerns regarding tax evasion or money laundering facilitation."
+  },
+  {
+    "rfc": "UMA020308JQ3",
+    "name": "Universidad Marista, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The trust exhibits high exposure due to a critical accounting discrepancy where reported assets (~1.5M MXN) drastically understate the combined liabilities and equity (~46.1M MXN), indicating severe reporting anomalies or unrecorded financial structures. Operational efficiency is constrained by extremely low liquidity (current ratio <0.05) and a high payroll-to-income ratio (71.5%), while the concentration of outgoing donations to a single RFC raises internal coherence concerns. Although the unpaid board structure is standard, the financial inconsistencies and thin margins warrant scrutiny for potential resource diversion or data manipulation."
+  },
+  {
+    "rfc": "UTE750917PM4",
+    "name": "Universidad del Tepeyac, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The entity exhibits severe accounting inconsistencies, with reported assets (2.35M) significantly lower than liabilities plus equity (5.95M), suggesting unreported resources or data manipulation. Governance is highly concentrated among three unpaid family members, while zero fixed assets and a large, vaguely categorized expense line indicate weak internal controls and potential resource diversion. These structural and reporting anomalies place the trust in a high exposure tier for both operational efficiency and financial risk."
+  },
+  {
+    "rfc": "CAI961021QN7",
+    "name": "Camino Abierto, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.54,
+    "rationale": "The trust exhibits a severe mismatch between its 14.4M MXN asset base and minimal operational activity, with program spending representing only ~25% of total expenses. High 'honorarios' costs (54% of outflows) alongside zero payroll and a single small donor indicate low efficiency and governance opacity, despite the absence of direct cross-border laundering signals. The unpaid board\u2019s potential familial ties and dormant asset structure further elevate moderate exposure to resource misallocation and structural anomalies."
+  },
+  {
+    "rfc": "CCS051019JJ2",
+    "name": "Centro Comunitario Santa Fe, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The trust exhibits strong financial stability with exceptional liquidity and negligible leverage, indicating minimal insolvency risk. However, near-zero administrative expenses and unusually high interest yields on assets suggest potential cost misclassification or conservative capital hoarding rather than optimal program deployment. While the large unpaid board and catch-all operational line items are common in Mexican civil associations, they warrant routine oversight to ensure resources are not indirectly diverted."
+  },
+  {
+    "rfc": "CTE910318Q43",
+    "name": "La Casa del Teatro, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.72,
+    "rationale": "The trust exhibits high financial risk and anomaly exposure due to professional fees representing 87% of total income, a major red flag for potential fund diversion or money laundering. Despite a credible unpaid board and mission-aligned activities, the significant operational deficit, high leverage ratio (2.09), and misalignment between reported donation destinations and actual expense allocation indicate poor efficiency and weak internal controls."
+  },
+  {
+    "rfc": "CTS060707NM9",
+    "name": "Centro de Transporte Sustentable de Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The trust demonstrates high operational efficiency with nearly 99% of expenditures allocated directly to mission-aligned programs and a transparent, unpaid board structure. However, moderate risk persists due to extreme reliance on foreign funding (95%), substantial consulting outlays, and vague beneficiary metrics concentrated in a single municipality, which require enhanced AML monitoring and impact verification."
+  },
+  {
+    "rfc": "DBD061114NUA",
+    "name": "Desayunos para el Bienestar de la Infancia, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.63,
+    "rationale": "The trust exhibits high financial risk due to zero equity, 100% leverage, and extreme donor concentration, while exact data duplication across all reporting tables severely compromises internal coherence and signals potential data manipulation. Despite superficially high program efficiency, the complete absence of payroll, reliance on unpaid volunteers for a multi-million peso operation, and 100% in-kind pass-through disbursements to third parties create substantial anomaly risks indicative of possible fund diversion or money laundering."
+  },
+  {
+    "rfc": "FGL070718V33",
+    "name": "Fundacion Genomma Lab, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The entity demonstrates severe operational incoherence with zero staff, payroll, and negligible capitalization despite a broad health-focused mission, strongly indicating a corporate pass-through or tax-optimization vehicle rather than an active charitable organization. The entirely corporate board structure and absence of transparent grant distribution or operational metrics create high anomaly and compliance risks, pointing to very high exposure for potential fund diversion or money laundering."
+  },
+  {
+    "rfc": "FJV111213SM1",
+    "name": "Fundacion Jose Vasconcelos, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.43,
+    "rationale": "The foundation exhibits moderate exposure due to a significant mismatch between zero reported payroll and substantial program expenditures (700,629 MXN), suggesting heavy reliance on unreported third-party contractors or informal labor. While administrative costs are minimal and liabilities are absent, the extreme concentration in fixed assets (98.8% of total) combined with program spending exceeding current donation income raises coherence and liquidity concerns. The entirely unpaid, foreign-dominated board lacks operational transparency, warranting closer scrutiny of fund allocation and potential related-party contracting."
+  },
+  {
+    "rfc": "FLC150506CY0",
+    "name": "Fundacion Leonora Carrington, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The foundation exhibits a severe income-expense mismatch (10,440 MXN income vs 188,981 MXN expenses) with zero funds reported for its stated cultural programs, indicating poor operational coherence and efficiency. Over 70% of expenditures are concentrated in unspecified professional fees and books, while the balance sheet shows high leverage (86%) and minimal equity, raising substantial red flags for potential fund diversion or money laundering. The unpaid family board combined with opaque third-party payments and unexplained funding sources further compounds the anomaly risk, justifying a very high exposure rating."
+  },
+  {
+    "rfc": "FMM9804231L5",
+    "name": "Fundacion Michou y Mau, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.17,
+    "rationale": "The foundation exhibits exceptional operational efficiency with approximately 98% of expenditures allocated to direct beneficiary programs and minimal administrative overhead, alongside robust liquidity and negligible leverage. While the high per-beneficiary cost for specialized air ambulance transfers and the concentration of prominent, unpaid board members warrant routine governance monitoring, there are no structural anomalies, cross-border transactions, or indicators of fund diversion. Resource deployment remains highly coherent with its medical assistance mission, reflecting very low money laundering and efficiency risk."
+  },
+  {
+    "rfc": "FPO960828SY0",
+    "name": "Fundacion Politecnico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.12,
+    "rationale": "The foundation exhibits exceptional financial stability and operational efficiency, characterized by negligible liabilities, extreme liquidity, and administrative costs representing only ~2.3% of total inflows. Financial flows demonstrate strong internal coherence, with donation distributions, in-kind transfers, and recovery fee collections directly aligning with its IPN-support mission and showing transparent, granular beneficiary tracking. Although the large, unpaid board could theoretically dilute active oversight, the absence of unexplained foreign transactions, related-party anomalies, or disproportionate executive compensation confirms a very low risk of money laundering or resource mismanagement."
+  },
+  {
+    "rfc": "FRP1411183L4",
+    "name": "Fundacion Ruso-mexicana para la Promocion Cultural P.i. Tchaikovsky, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.93,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and an empty mission statement, indicating a dormant shell structure with extreme operational inefficiency and high financial anomaly risk. Governance is concentrated within a familial board lacking independent oversight, which severely compromises internal coherence and aligns with typical red flags for fund diversion or money laundering vehicles."
+  },
+  {
+    "rfc": "FTE7504014G3",
+    "name": "Fundacion Televisa, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.55,
+    "rationale": "The foundation exhibits moderate exposure due to 73% of operational expenses being vaguely classified as 'Otros', a single board member absorbing 30% of the total payroll, and zero fixed assets despite its cultural mandate. While strong liquidity and mission-aligned program spending mitigate severe financial risk, the corporate board ties and concentrated, unexplained transfers to third-party entities indicate notable internal coherence and anomaly vulnerabilities."
+  },
+  {
+    "rfc": "FUC000126KW5",
+    "name": "Fucam, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.71,
+    "rationale": "High exposure due to low operational efficiency, with payroll and administrative overhead consuming over 40% of total revenue while direct programmatic spending remains disproportionately low. Governance presents significant conflict-of-interest risks as the entire board consists of the Guisa family, and the heavy reliance on patient recovery fees (90% of income) contradicts the stated mission to serve marginalized populations. Additionally, a liquidity ratio below 1.0 and the exact mathematical matching of donation inflows to outflows suggest potential financial structuring or restricted fund routing anomalies."
+  },
+  {
+    "rfc": "GME920514V69",
+    "name": "Greenpeace Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The trust demonstrates exceptional operational efficiency with over 96% of expenditures allocated to programmatic activities and administrative overhead strictly limited to 3.4%. Financial coherence is robust, showing transparent income-to-expense alignment, an unpaid national board, and no opaque cross-border flows or round-number anomalies typical of laundering. Minor deductions apply only for the high leverage ratio (2.33) and placeholder beneficiary counts, which do not materially impact overall risk."
+  },
+  {
+    "rfc": "IBA0707022P7",
+    "name": "Instituto Banamex, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.33,
+    "rationale": "The trust exhibits exceptional liquidity and negligible leverage, indicating minimal financial risk, but operates with zero internal payroll and relies entirely on outsourced corporate services, raising moderate coherence and anomaly concerns. The board consists exclusively of interlocking corporate affiliates without independent oversight, and the exact match between liabilities and contractor fees suggests a structured pass-through vehicle rather than an active educational operator. While financially stable, the lack of operational substance warrants moderate scrutiny for potential related-party fund routing or tax optimization."
+  },
+  {
+    "rfc": "ICH7312149Q3",
+    "name": "Instituto Cultural Helenico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The trust demonstrates strong operational self-sufficiency with transparent, mission-aligned revenue streams and very low leverage, though short-term liquidity is moderately constrained by its heavy fixed-asset structure. Expense distributions are detailed and consistent with cultural programming, with no foreign transactions or anomalous consulting fees that typically signal laundering risks. While the unpaid board exhibits minor familial name clustering, overall financial coherence and governance practices reflect low exposure to inefficiency or illicit fund diversion."
+  },
+  {
+    "rfc": "MLM141209V17",
+    "name": "Mejores Lideres de Mexico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.49,
+    "rationale": "The trust exhibits moderate exposure due to high donor concentration (87% from a single corporate entity), a disproportionately large and vaguely described program expense line (2.66M MXN), and unexplained foreign outflows. Despite low leverage and minimal administrative costs, the extreme liquidity ratio (15.18x) and reliance on an unpaid board with 334 volunteers indicate inefficient capital deployment and weak operational oversight. These structural anomalies, combined with limited beneficiary transparency and a board lacking disclosed professional governance history, create a plausible environment for fund layering or diversion despite surface-level compliance."
+  },
+  {
+    "rfc": "PMC090302HB5",
+    "name": "Pro Mujeres Cautivas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.71,
+    "rationale": "The trust exhibits severe operational incoherence, reporting zero payroll and employees despite a stated mission to train and remunerate incarcerated women, while maintaining over 1.25M MXN in highly liquid assets. This capital stagnation, combined with a board and volunteer-only structure and negligible fixed assets, indicates potential dormancy or fund parking, significantly elevating anomaly and efficiency risks."
+  },
+  {
+    "rfc": "UGA970421TM3",
+    "name": "Un Granito de Arena, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The organization exhibits critical accounting anomalies, including a sign-reversed equity position and zero fixed assets despite operating a geriatric facility, alongside a major diversion red flag of zero payroll versus 2.86 million MXN in assimilated contractor fees. Program efficiency is severely compromised with direct beneficiary aid representing under 2% of total expenses, while high leverage, poor liquidity, and vague 'other' expenditures indicate weak financial controls. The unpaid board and absence of governance history further eliminate oversight mechanisms, strongly pointing to high exposure for resource diversion or money laundering."
+  },
+  {
+    "rfc": "ADC990125P37",
+    "name": "Amigos del Desierto de Coahuila, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.34,
+    "rationale": "The entity exhibits strong financial health with high liquidity, minimal leverage, and transparent alignment between commercial revenues and operational costs, indicating low money laundering risk. However, the substantial compensation paid to twelve board members and a general director deviates from standard non-profit governance, introducing moderate efficiency and self-dealing concerns that slightly elevate overall exposure."
+  },
+  {
+    "rfc": "CIZ630608IM3",
+    "name": "Colegio Ignacio Zaragoza, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The entity demonstrates strong financial stability with negligible leverage and high liquidity, though its heavy reliance on tuition fees contrasts with its stated charitable mission, indicating a structural coherence gap. Operational efficiency is acceptable with reasonable administrative overhead, but the concentrated board compensation and atypical income classifications introduce moderate transparency concerns that require monitoring."
+  },
+  {
+    "rfc": "CRD9409218I5",
+    "name": "Caritas Region Desertica, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.62,
+    "rationale": "The trust exhibits high exposure due to a significant mismatch between reported donations (13,700 MXN) and total outflows (~63,700 MXN), alongside nearly half of all expenses being vaguely categorized as 'Otros' (gasoline and bank commissions totaling 12,504 MXN). Combined with zero payroll, duplicated reporting data, and a large unpaid board, these inconsistencies point to weak internal controls and potential fund diversion or layering that warrant immediate regulatory scrutiny."
+  },
+  {
+    "rfc": "CCO940316JF0",
+    "name": "Caritas Colima, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The organization demonstrates strong financial solvency with negligible leverage and transparent, mission-aligned fund allocation across verified vulnerable groups. An unpaid board and the absence of foreign or anomalous transactions significantly mitigate governance and money laundering risks. While operational efficiency is acceptable, the high liquidity ratio indicates room for better capital deployment to maximize programmatic impact."
+  },
+  {
+    "rfc": "FFC190625QA5",
+    "name": "Fundacion Familia Coliman, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.76,
+    "rationale": "The foundation exhibits high exposure due to 98% of its total assets being classified as deferred with minimal program deployment (only ~12% of donations allocated to direct beneficiaries), raising significant layering and fund-hoarding concerns. The absence of a stated mission, reliance on a single foreign donor, and heavily aggregated 'general expenses' weaken internal coherence and increase money laundering vulnerability. Additionally, implausibly low per-beneficiary spending and an unpaid 14-member board suggest weak governance and potential data manipulation."
+  },
+  {
+    "rfc": "CTI2211141S1",
+    "name": "Corazonagua y Tierra, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.29,
+    "rationale": "The foundation demonstrates strong financial coherence with zero liabilities, positive equity, and highly efficient resource allocation, as administrative costs represent less than 0.4% of total expenses. However, reliance on a single donor, a family-linked board, and the complete absence of formal payroll introduce moderate governance and operational transparency risks. Despite these structural vulnerabilities, the clear alignment between expenditures, mission-driven projects, and domestic operations indicates a low overall exposure to money laundering or significant mismanagement."
+  },
+  {
+    "rfc": "BAG000914U48",
+    "name": "Banco de Alimentos de Guanajuato, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The trust exhibits strong financial stability with negligible leverage, low administrative overhead (~4.8%), and expenses that logically align with its food distribution mission. However, the accumulation of substantial unspent reserves (liquidity ratio ~35x) and heavy reliance on public funding alongside significant recovery fees indicate moderate operational inefficiency and warrant closer monitoring of fund deployment. Board compensation is concentrated in a single director while other officers are unpaid, which is standard for NGOs but requires routine conflict-of-interest verification."
+  },
+  {
+    "rfc": "CIM800416NL8",
+    "name": "Centro de Investigacion en Matematicas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.12,
+    "rationale": "The organization exhibits exceptional financial stability and operational coherence, characterized by a low leverage ratio (0.10), healthy liquidity, and payroll expenses that align with standard academic compensation. Governance is fully institutionalized through major public and academic entities with zero personal remuneration, effectively neutralizing conflict-of-interest and diversion risks. Expense allocation is highly transparent, directly supports its scientific mandate, and shows no statistical anomalies or suspicious fund diversion patterns."
+  },
+  {
+    "rfc": "FDC150717BVA",
+    "name": "Fundacion Dr Cabeza de Vaca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The foundation exhibits severe operational inefficiency and financial anomalies, with administrative and consulting expenses vastly exceeding reported donations and total assets, while bank commissions are disproportionately high relative to transaction volume. Governance is heavily concentrated among family members with no independent oversight, and the complete absence of direct program costs directly contradicts its stated medical mission. These structural and financial inconsistencies strongly indicate potential fund diversion or layering activities, placing the entity in a very high-risk category for both mismanagement and money laundering."
+  },
+  {
+    "rfc": "PHE160512JU3",
+    "name": "Patronato del Hospital de Especialidades Pediatrico de Leon, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The foundation demonstrates high programmatic efficiency with ~93% of donations directed to beneficiaries and negligible financial leverage, indicating strong baseline resource allocation. However, 85.6% of operational expenses are aggregated under an unclassified 'Otros: VARIOS' category alongside zero formal payroll, creating significant transparency gaps that could mask fund diversion or informal payments. The exact numerical match between total expenses and distributed aid, combined with unpaid governance and volunteer-only operations, suggests potential accounting misclassification and warrants moderate scrutiny for data manipulation."
+  },
+  {
+    "rfc": "ACE900306B21",
+    "name": "Ateneo Celayense, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.61,
+    "rationale": "The trust shows high exposure primarily due to an opaque 'Otros' expense line representing 83% of total outflows, which severely undermines transparency and indicates a strong potential for fund diversion or money laundering. Governance is entirely concentrated within a single family (Larrauri/Esquivel), raising significant internal coherence and conflict-of-interest risks. Although liquidity and leverage metrics are financially sound, the lack of detailed expense breakdowns and familial control heavily outweigh these structural strengths."
+  },
+  {
+    "rfc": "CAN720328317",
+    "name": "Colegio Amado Nervo de Irapuato, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.22,
+    "rationale": "The trust demonstrates high operational efficiency with payroll and statutory contributions aligning precisely, minimal administrative overhead, and zero foreign transactions, indicating low anomaly risk. However, low current liquidity relative to total liabilities and the standard but opaque practice of zero board compensation introduce moderate financial and governance considerations. Overall, the financial structure is coherent and typical for an established educational institution, resulting in low exposure."
+  },
+  {
+    "rfc": "CMA940524FM7",
+    "name": "Conservatorio de Musica y Artes de Celaya, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The trust exhibits strong financial health and high operational efficiency, characterized by negligible leverage (1.5%), robust liquidity, and minimal administrative overhead (1.7%). Although 91.7% of donations originate from the public sector and operational expenses are broadly categorized, the governance structure shows no red flags, with only the executive director compensated and no evidence of self-dealing or anomalous fund diversion. These factors collectively indicate a very low risk profile for money laundering and mismanagement."
+  },
+  {
+    "rfc": "JAD0705096S8",
+    "name": "Jovenes Adelante, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The organization demonstrates strong operational leverage through high volunteer engagement and zero executive compensation, but exhibits moderate risk due to an 84% reliance on a single foreign corporate donor and a material discrepancy between reported scholarship disbursements and expense records. Excessive liquidity ratios suggest delayed fund deployment, while cross-border funding concentration and minor non-deductible expenses warrant enhanced AML monitoring despite overall mission alignment."
+  },
+  {
+    "rfc": "ULP920108BT1",
+    "name": "Universidad Loyola del Pacifico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.5,
+    "rationale": "Operative efficiency is constrained by a high administrative payroll ratio relative to direct educational spending, while financial risk is elevated due to liabilities exceeding total assets. Internal coherence remains acceptable as scholarship allocations align with the educational mission, though anomaly risk is present from undocumented expenses and structural leverage. The unpaid board shows standard governance, but overall financial structuring requires improvement to mitigate moderate exposure."
+  },
+  {
+    "rfc": "AVE230807MA1",
+    "name": "Aventureros Mc, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.94,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and operational activity despite being registered as an assistance organization, indicating a dormant or shell structure with severe transparency and governance gaps. The absence of a stated mission, a single unsalaried administrator, and complete financial inactivity present extreme anomalies consistent with high money laundering and inefficiency risk."
+  },
+  {
+    "rfc": "SRO140827QF3",
+    "name": "El Sabio Roble, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The organization demonstrates high operational efficiency with a low administrative cost ratio (~1.8%) and healthy financial leverage, indicating effective resource deployment aligned with its gerontological mission. However, the exact numerical match between cash donations and recovery fees, a legally insufficient two-member governing board, and unconventional expense categorization introduce moderate reporting anomalies that warrant audit to rule out circular funding or compliance gaps."
+  },
+  {
+    "rfc": "ASA180823QF2",
+    "name": "Asistencia Social Alcalde, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.45,
+    "rationale": "Despite a high program spending ratio, the trust exhibits critical accounting inconsistencies, notably the exact duplication of the $34.3M figure across both donation and patient co-pay income streams, which strongly suggests data manipulation or tax misclassification. The extreme opacity of the 'Otros' expense line (95% of operations) and a zero-salary board structure further undermine internal coherence and raise moderate risks of fund diversion or financial layering."
+  },
+  {
+    "rfc": "BAC0910211G8",
+    "name": "Banco de Alimentos Costalegre, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.9,
+    "rationale": "The organization exhibits critical governance failures, notably listing the legal entity itself as its own director, alongside highly irregular accounting where liabilities exactly match current assets. Substantial donation inflows contrast sharply with negligible payroll and operational expenses, while identical in-kind donation amounts across different donor types strongly suggest fabricated records. These structural and financial anomalies indicate severe inefficiency and a very high risk of fund diversion or money laundering."
+  },
+  {
+    "rfc": "BVA021030JR5",
+    "name": "Becas Vallarta, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The foundation demonstrates low financial risk and transparent governance with an unpaid board, but operational efficiency is moderate as administrative and marketing expenses consume nearly half of total outlays. Resource allocation shows no significant anomalies or money laundering indicators, though optimizing overhead could improve direct program impact."
+  },
+  {
+    "rfc": "CGU791002JB2",
+    "name": "Caritas de Guadalajara, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The foundation demonstrates strong operational efficiency and robust liquidity with minimal administrative overhead, indicating effective resource allocation aligned with its charitable mission. However, moderate exposure persists due to substantial in-kind transaction volumes, concentrated single-beneficiary disbursements, and significant pass-through donations to other civil associations, which introduce valuation and layering vulnerabilities that require enhanced AML audit controls despite an unpaid, structurally compliant board."
+  },
+  {
+    "rfc": "CJA621106IP8",
+    "name": "Cultural de Jalisco, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The entity exhibits high exposure due to disproportionate and poorly itemized expenses, with 'Mantenimiento' and 'Otros Gastos' accounting for over 65% of total outflows, raising significant diversion and laundering concerns. While liquidity is strong and leverage is minimal, the lack of transparency in major cost centers and duplicated reporting entries severely undermine operational efficiency and internal coherence."
+  },
+  {
+    "rfc": "DAV220323C51",
+    "name": "Digna & Valiente, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.48,
+    "rationale": "The exact one-to-one matching of in-kind donations to program expenses, combined with zero payroll for clinical addiction services, indicates potential data manipulation or a pass-through structure. While zero liabilities and clear mission alignment reduce financial risk, the lack of operational transparency and unexplained fixed assets warrant moderate scrutiny."
+  },
+  {
+    "rfc": "FGC0905229T2",
+    "name": "Fundacion Guadalajara Country Club, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.45,
+    "rationale": "The foundation maintains a decent program expense ratio (~83%) but exhibits notable anomalies, including a 'costo de venta' line item matching in-kind donations, substantial idle interest income, and zero formal payroll despite high individual honorarios, suggesting potential related-party compensation or tax optimization. The board operates without salaries, and the 'Country Club' affiliation raises coherence concerns regarding genuine outreach to vulnerable populations versus member benefit. While financial leverage is low, the operational opacity and asset retention warrant closer scrutiny for resource diversion."
+  },
+  {
+    "rfc": "ITR160126FT9",
+    "name": "Impulso Trans, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.52,
+    "rationale": "The trust exhibits strong liquidity and mission-aligned spending, but presents significant structural anomalies, notably allocating 73% of expenses to individual contractor fees while employing only one formal staff member and compensating the board at zero. Heavy reliance on foreign funding (81.6%) combined with this informal labor structure and the absence of board governance history elevates money laundering and tax compliance risks, despite otherwise coherent financial reporting."
+  },
+  {
+    "rfc": "LPV150630EZ9",
+    "name": "Ladra Puerto Vallarta, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.12,
+    "rationale": "The trust exhibits exceptional operational efficiency with a 98.3% program expense ratio and negligible leverage, while all expenditures directly align with its stated animal rescue mission. Governance remains transparent despite a small, unpaid family board, and the absence of vague administrative fees, foreign transactions, or irregular cash flows indicates minimal diversion or money laundering risk. The high fixed-asset concentration is structurally typical for shelters and poses no liquidity threat given near-zero liabilities."
+  },
+  {
+    "rfc": "BAZ091005GZ7",
+    "name": "Banco de Alimentos de Zapotlanejo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.23,
+    "rationale": "The trust demonstrates robust financial health with negligible leverage, high liquidity, and a fully unpaid board that effectively mitigates conflict-of-interest risks. Operational coherence is strong as in-kind donations align precisely with program expenses, though a 32% administrative overhead and reliance on recovery fees slightly reduce overall efficiency. No structural anomalies, related-party transactions, or diversion indicators are present, confirming a low-risk profile."
+  },
+  {
+    "rfc": "CDI190814IYA",
+    "name": "El Color de la Diversidad, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.87,
+    "rationale": "The trust exhibits severe financial incoherence, reporting 138,595 MXN in income while holding only 9,935 MXN in assets, zero payroll, and no fixed assets, which indicates unaccounted fund outflows or potential diversion. The reliance on recovery fees for a low-income mission, combined with a zero-staff operational model, contradicts its stated objectives and strongly suggests a pass-through or shell structure. These structural anomalies and lack of expense transparency place the entity in the highest risk tier for inefficiency and money laundering exposure."
+  },
+  {
+    "rfc": "PAM160801BC9",
+    "name": "Pasitos de Amor, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The entity shows negligible financial risk with zero liabilities and full liquidity, but the missing mission statement and lack of operational metrics weaken internal coherence. The unpaid board and volunteer-only structure minimize overhead, though the absence of governance history and fixed assets indicates limited or dormant activity. While the small scale inherently restricts money laundering exposure, transparency gaps and minimal operational footprint justify a low risk rating."
+  },
+  {
+    "rfc": "CNI481209NG6",
+    "name": "Ciudad de los Ni\u00f1os, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.18,
+    "rationale": "The trust demonstrates exceptional operational efficiency with minimal administrative overhead (~1.3%) and transparent allocation of funds toward direct residential care, education, and staff compensation. Financial risk is negligible due to near-zero leverage and substantial liquidity that generates legitimate, market-aligned interest income, while board compensation remains modest and proportional to the organization's scale. No structural anomalies, related-party diversions, or suspicious transaction patterns were detected, indicating strong internal coherence and very low money laundering exposure."
+  },
+  {
+    "rfc": "APP181016AU5",
+    "name": "Asociacion Pocas Pulgas, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The trust demonstrates strong financial health with zero leverage, high liquidity, and 100% operational spending directly aligned with its animal welfare mission. However, the complete absence of administrative costs, reliance on unpaid volunteers, and familial ties among board members introduce minor transparency and governance concerns. While historical board data is unavailable, the current financial coherence indicates low money laundering risk, though improved expense categorization would strengthen accountability."
+  },
+  {
+    "rfc": "ATC130705IA1",
+    "name": "Abre Tu Corazon, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.81,
+    "rationale": "The entity exhibits extreme operational inefficiency and severe internal incoherence, with zero staff, volunteers, and active programs despite a broad social mission, relying solely on minimal depreciation expenses. The complete absence of financial flows, zero liquidity, and family-controlled unpaid board suggest a dormant or shell structure, raising significant concerns about potential misuse for tax benefits or asset holding rather than genuine charitable activity. These structural anomalies and lack of substantive operations place it in the highest risk category for both efficiency and financial transparency."
+  },
+  {
+    "rfc": "CCA220330NP0",
+    "name": "Capturar Carbono, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The entity reports absolute zeros across all financial categories (assets, liabilities, equity, payroll) despite an ambitious international mission, indicating a dormant or shell structure with severe operational inefficiency and extreme anomaly risk. Governance is concentrated in a single unpaid director with no independent oversight, creating high vulnerability to unreported fund flows or resource diversion. This complete lack of financial transparency and structural coherence places it in the highest risk tier for money laundering and poor efficiency management."
+  },
+  {
+    "rfc": "MMI190524T62",
+    "name": "Fundacion la Morada de la Misericordia, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.4,
+    "rationale": "The foundation demonstrates solid financial stability with low leverage and healthy liquidity, but presents moderate exposure due to accounting irregularities, notably the complete absence of classified administrative expenses and mission-inconsistent spending on religious items. Elevated telecom costs, unreceipted expenses, and inconsistent beneficiary-to-fund ratios indicate potential data manipulation or operational inefficiencies that require stricter fiscal oversight and transparency."
+  },
+  {
+    "rfc": "REA220602UE6",
+    "name": "Realitrans, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The trust demonstrates high programmatic allocation and zero financial leverage, but exhibits critical operational incoherence with zero reported staff or volunteers despite serving 150 beneficiaries and relying on vague 'general expenses.' The immediate pass-through of a single donation, combined with an unpaid two-person board lacking historical oversight data, indicates moderate exposure to potential data manipulation or conduit-entity characteristics, despite low direct financial risk."
+  },
+  {
+    "rfc": "CSO230213CB8",
+    "name": "Cambio Sostenible, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.75,
+    "rationale": "The entity shows high exposure due to a perfect 1:1 match between income and expenses with zero operational footprint (no staff, volunteers, or fixed assets), raising significant coherence and anomaly flags. The use of 'cuotas de recuperaci\u00f3n' alongside a single, undetailed event expense for 75 beneficiaries suggests potential pass-through activity or fund diversion rather than structured charitable operations. While leverage is minimal, the complete lack of administrative overhead and exact financial matching strongly indicate inefficiency and elevated money laundering risk."
+  },
+  {
+    "rfc": "CSU631111A7A",
+    "name": "Cultural Sucre, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The organization demonstrates high operational efficiency with expenses closely aligned to its educational mission and a transparent, proportionate payroll structure. Financial risk is moderately elevated due to low liquidity and a balance sheet discrepancy, though this is offset by strong income-expense coherence and standard sector ratios. There are no indicators of fund diversion or money laundering, as all transactions are domestic, mission-aligned, and lack anomalous patterns."
+  },
+  {
+    "rfc": "FBS210928H5A",
+    "name": "Fundacion Bomberos por Siempre, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.92,
+    "rationale": "The complete absence of financial data (zero assets, equity, and expenses) directly contradicts reported operations serving 1,500 beneficiaries, indicating severe operational incoherence and extreme anomaly risk. Coupled with an unpaid, minimally structured board lacking disclosed professional or financial history, the entity exhibits characteristics of a dormant shell or potential front, warranting maximum regulatory scrutiny."
+  },
+  {
+    "rfc": "FBT080215277",
+    "name": "Fundacion por el Bien de Tepotzotlan, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.72,
+    "rationale": "The foundation shows high exposure due to a low program allocation ratio (~45%) and highly opaque expense reporting, with over 85% of outflows categorized under vague items like 'Otros gastos' and inflated 'Papeler\u00eda.' These anomalies strongly indicate potential fund diversion or money laundering through unverified operational costs. Additionally, the board of directors is dominated by individuals sharing the same surnames, suggesting familial control and weak independent oversight that further compromises financial transparency and internal coherence."
+  },
+  {
+    "rfc": "FCA1603011M4",
+    "name": "Funda Can, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.94,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and volunteers, rendering it completely operationally inert and financially incapable of fulfilling its stated animal welfare mission. This extreme lack of activity, combined with a minimal board structure and uniform zero-valued financials, strongly indicates a dormant shell or potential front for non-operational financial maneuvers. Consequently, it exhibits critical inefficiency and high anomaly risk consistent with money laundering or tax evasion patterns."
+  },
+  {
+    "rfc": "FIN081001EZ9",
+    "name": "Fundacion Incluyeme, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.54,
+    "rationale": "The trust demonstrates high programmatic efficiency with over 90% of funds directed to direct assistance, but exhibits moderate risk due to extreme donor concentration (98% from a single corporate entity) and high financial leverage with thin liquidity. A substantial discrepancy between reported payroll and salary expenses, combined with an unpaid board lacking transparency on volunteer status or related-party ties, raises internal coherence and potential data manipulation concerns that warrant deeper audit scrutiny."
+  },
+  {
+    "rfc": "PCI191217N88",
+    "name": "Paz Civica, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.77,
+    "rationale": "The trust exhibits high exposure due to over 56% of funds directed toward vague professional fees and travel expenses, while only 6% reaches direct beneficiaries, indicating severe operational inefficiency. Critical discrepancies between board compensation and payroll records, alongside total expenditures exceeding reported current assets, strongly suggest weak internal controls and potential resource diversion."
+  },
+  {
+    "rfc": "PGT070802V16",
+    "name": "Plan Genesis 13, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The trust reports zero assets, liabilities, and equity despite claiming multi-state shelter operations, while substantial in-kind donations (~610k MXN) lack any expense reconciliation. Operational capacity is highly implausible given zero paid staff, only 15 volunteers, and inflated beneficiary counts, with cash expenses exactly matching cash donations. These structural gaps and reporting anomalies indicate severe inefficiency and a high risk of resource diversion or pass-through activity."
+  },
+  {
+    "rfc": "BAZ130423QJ6",
+    "name": "Banco de Alimentos de Zamora, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "While the foundation demonstrates strong operational efficiency with a high program expense ratio and healthy liquidity, the identical distribution amounts across five municipalities and substantial in-kind donation valuations raise significant coherence and anomaly concerns. The high volume of recovery fees and unpaid board members indicate moderate exposure that warrants stricter financial tracking and independent oversight to mitigate potential data manipulation or resource diversion risks."
+  },
+  {
+    "rfc": "BEC120618E23",
+    "name": "Bomberos Especializados en Capacitacion Atencion y Prevencion de Emergencias, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.48,
+    "rationale": "The trust exhibits moderate risk due to a current ratio below 1.0, indicating short-term liquidity pressure, and a non-compliant two-member unpaid board overseeing operations with zero reported payroll. Additionally, the exact matching of donation funds to maintenance expenses and an unaccounted surplus raise coherence and anomaly flags, suggesting potential underreporting or fund pass-through despite mission-aligned activities."
+  },
+  {
+    "rfc": "BNS190823GZ3",
+    "name": "Bomberos Nuevo San Juan Parangaricutiro, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.87,
+    "rationale": "The trust exhibits critical financial fragility with liabilities covering 99.9% of total assets and an excessively high administrative cost ratio (~72.5%) driven by unexplained professional fees despite having zero payroll. Severe operational incoherence is evident, as the organization claims to assist 23,000 beneficiaries without any employees, volunteers, or meaningful operational spending. Furthermore, the exact one-to-one match between donations and expenses, combined with an empty mission statement, strongly suggests potential fund diversion and inadequate internal controls."
+  },
+  {
+    "rfc": "TZI121217L48",
+    "name": "Tzintzuni, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.92,
+    "rationale": "The entity exhibits severe financial and operational anomalies, including a fundamental accounting imbalance where liabilities exceed total assets, alongside zero payroll, staff, and fixed assets despite an active social mission. This structural incoherence, combined with extreme leverage and a board dominated by shared surnames operating without compensation, strongly indicates a dormant shell or potential vehicle for resource diversion. Consequently, the trust demonstrates critical inefficiencies and elevated money laundering exposure."
+  },
+  {
+    "rfc": "BAC9810083F1",
+    "name": "Banco de Alimentos de Cuernavaca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.52,
+    "rationale": "The foundation exhibits moderate exposure due to highly opaque 'other expenses' representing over 90% of total outflows, alongside repetitive donations routed through generic XAXX RFCs that obscure beneficiary tracking and valuation. While equity is strong and leverage is low, the lack of detailed expense breakdowns and potential familial ties among unpaid board members raise significant coherence and anomaly concerns. These structural opacities indicate substantial room for operational improvement and necessitate stricter audit controls to mitigate potential data manipulation or fund diversion risks."
+  },
+  {
+    "rfc": "ICC6011237C6",
+    "name": "Instituto Cultural Cuernavaca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The trust demonstrates strong operational efficiency with a clear educational mission, high programmatic spending (scholarships, teaching materials, and student services), and a lean, unpaid board that minimizes governance overhead. Financial risk is low given a healthy equity-to-assets ratio (~81.7%), manageable leverage (debt-to-equity ~0.22), and income heavily driven by tuition rather than opaque donations. Minor coherence and anomaly flags include a high proportion of administrative expenses (rent, VAT, and revaluation) relative to direct educational outlays, but no evidence of fund diversion, circular transactions, or money laundering patterns is present."
+  },
+  {
+    "rfc": "AEC680206PW4",
+    "name": "Accion Educativa Cultural, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.72,
+    "rationale": "The foundation exhibits high exposure due to extreme financial opacity, with 93% of total expenses (109M MXN) aggregated under a single 'Otros' category, which severely obscures operational tracking and raises significant anomaly risks. Additionally, the board is entirely composed of family members with zero compensation, while liquidity is critically low (current ratio of 0.33) despite heavy reliance on tuition-driven revenue. These governance and reporting inconsistencies indicate substantial weaknesses in internal controls and potential fund diversion vulnerabilities."
+  },
+  {
+    "rfc": "AFO170721DB1",
+    "name": "Amparo y Fortaleza, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.91,
+    "rationale": "The trust exhibits severe financial incoherence with total expenses (635,965 MXN) vastly exceeding reported income (369,507 MXN) and zero operational staff or volunteers despite claiming to manage a dining project for 60 elderly beneficiaries. Over 88% of expenditures are classified under a vague 'donations for food project' category, a structural anomaly highly indicative of fund diversion or layering. Combined with critically low liquidity, disproportionate bank commissions, and a complete mismatch between reported resources and operational capacity, these factors indicate very high exposure for money laundering and poor efficiency management."
+  },
+  {
+    "rfc": "AUT040924J91",
+    "name": "Autismo, ABP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.45,
+    "rationale": "The organization exhibits moderate risk due to high liquidity and significant surplus retention, indicating inefficient deployment of over 60% of total income. Opaque consulting and training expenses, a disproportionately large unpaid board, and commercial-style recovery fees raise internal coherence and compliance concerns. While leverage is low, the lack of transparent program allocation and presence of non-deductible expenses suggest potential resource diversion or operational inefficiencies."
+  },
+  {
+    "rfc": "BOR140514AU1",
+    "name": "Blooders.org, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.24,
+    "rationale": "The entity demonstrates strong financial stability with high liquidity and zero leverage, presenting minimal money laundering risk. However, the significant disparity between accumulated equity and minimal operational expenditures suggests potential resource hoarding or operational inactivity. While reported expenses are transparent and mission-aligned, the absence of payroll and low programmatic output relative to assets indicates room for efficiency improvements."
+  },
+  {
+    "rfc": "CRO040505DN3",
+    "name": "Cruz Rosa, ABP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The organization demonstrates high operational efficiency with ~84% of funds directed to programs and minimal leverage, indicating strong financial health. However, excessive current assets (40M MXN) generating substantial interest income suggest potential fund hoarding or suboptimal resource deployment. The unpaid national board and clear program alignment show low anomaly risk, though minor reporting discrepancies between program spending and expense breakdowns warrant routine oversight."
+  },
+  {
+    "rfc": "PPB610315K34",
+    "name": "Patronato de Papeleros y Boleros, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "The trust exhibits moderate financial risk due to high leverage (73%) and an operational deficit where total expenses exceed current income, though internal coherence is strong with exact alignment between allocated funds and reported costs. Heavy reliance on recovery fees (80% of revenue) and tight liquidity indicate sustainability and efficiency challenges rather than money laundering, placing it in a moderate exposure tier."
+  },
+  {
+    "rfc": "HWM990521E78",
+    "name": "Hope Worldwide Monterrey, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.73,
+    "rationale": "The trust exhibits high exposure due to critical operational incoherences, notably a geographic mismatch between its stated mission (Mexico City) and reported activities (Monterrey), alongside zero documented program spending despite claiming 409 beneficiaries. Financial anomalies are severe, with nearly 197k MXN directed to 'honorarios' while reporting zero payroll, zero staff, and zero cash donations, indicating potential fund diversion or opaque related-party contracting. The unpaid board structure and absence of transparent operational tracking further elevate money laundering and efficiency risks."
+  },
+  {
+    "rfc": "KAN1912104H9",
+    "name": "Kanarim, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The complete absence of assets, liabilities, and equity combined with minimal income and zero paid staff indicates severe operational inefficiency and a lack of verifiable economic substance. The board comprises two likely related individuals with no compensation, and the total lack of fixed assets directly contradicts its stated musical mission, strongly suggesting off-book operations or shell-entity characteristics. These financial voids and structural anomalies place the organization at very high risk for resource mismanagement and potential illicit fund diversion."
+  },
+  {
+    "rfc": "AFU1410099G2",
+    "name": "Arbol Fundador, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The entity exhibits a critical disconnect between its ambitious social mission and a completely dormant operational structure, evidenced by zero assets, zero staff, and zero operational expenses. The sole vague administrative expense of 3,216 MXN alongside a nominal unpaid board strongly indicates a shell organization highly susceptible to layering or tax avoidance. This results in extremely low efficiency and high anomaly risk, firmly placing it in the highest exposure tier."
+  },
+  {
+    "rfc": "BAO9810239K7",
+    "name": "Banco de Alimentos de Oaxaca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The trust demonstrates high operational efficiency with a ~78% program-to-expense ratio, negligible leverage, and a fully domestic operational footprint that minimizes money laundering vectors. However, the heavy reliance on the generic 'Otros' expense category, minor tax surcharges, and substantial idle liquidity generating interest slightly reduce financial transparency and capital deployment efficiency. The unpaid board and clear alignment between mission and expenditures further support a low-risk, well-managed profile."
+  },
+  {
+    "rfc": "BES200901590",
+    "name": "Bienestar y Educacion Sexual de Oaxaca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.76,
+    "rationale": "The entity exhibits high exposure due to critical financial anomalies, notably payroll expenses (2,000 MXN) exceeding total reported assets (1,725 MXN), which signals unsustainable operations or potential off-book fund flows. There is a severe disconnect between its stated statewide, multidisciplinary mission and its actual one-person capacity, compounded by a minimal two-member board lacking independent oversight or historical governance depth. These structural inconsistencies, alongside near-zero liquidity and fixed assets, strongly indicate poor resource management and elevated risk of financial diversion or dormant shell activity."
+  },
+  {
+    "rfc": "CMU231030J6A",
+    "name": "Caminando Municipios, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.87,
+    "rationale": "The entity exhibits zero operational activity (no payroll, volunteers, or fixed assets) despite a broad assistance mandate, indicating severe inefficiency and high anomaly risk typical of dormant shell structures. Financial coherence is critically low, as the minimal capital matches equity exactly with no operational footprint, suggesting potential use for tax optimization or illicit fund routing rather than social impact. The unpaid board and absence of historical activity data further compound governance vulnerabilities and money laundering exposure."
+  },
+  {
+    "rfc": "CSC630405CWA",
+    "name": "Colegio Salina Cruz, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.25,
+    "rationale": "The trust exhibits strong financial stability with minimal leverage, healthy liquidity, and a clear alignment between tuition income and educational expenditures. However, the large, vaguely detailed 'Otros' expense category and compensated board members introduce minor transparency concerns, while the lack of historical board data limits deeper governance assessment. Overall, the structure reflects standard educational operations with very low money laundering indicators, though expense granularity and governance tracking require improvement."
+  },
+  {
+    "rfc": "FBU2103297N5",
+    "name": "Fundacion Bulma, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.92,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and staff, directly contradicting its stated mission of active social and environmental programs and indicating a dormant shell structure. This complete lack of operational and financial footprint, combined with single-person governance and zero compensation, presents severe anomalies consistent with potential money laundering or tax evasion vehicles. Consequently, the foundation exhibits critical inefficiencies and extreme exposure to illicit financial activities."
+  },
+  {
+    "rfc": "FTO140423JB1",
+    "name": "Francisco Toledo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.13,
+    "rationale": "The trust demonstrates exceptional operational efficiency with over 90% of expenses directed toward mission-aligned cultural programs and negligible administrative overhead. Financial risk is minimal due to high liquidity, near-zero leverage, and transparent expense categorization, while the unpaid board and absence of foreign transactions further reduce governance and laundering vulnerabilities."
+  },
+  {
+    "rfc": "OAX230215H62",
+    "name": "Oaxatrans, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.93,
+    "rationale": "The absolute zero reporting across all financial, payroll, and asset categories creates a severe incoherence with its stated mission of statewide human rights support, indicating near-total operational inefficiency and financial opacity. This structural void, paired with single-member governance and no documented activity, aligns with shell entity patterns that pose extreme risks for off-book transactions and potential misuse of authorized donee status."
+  },
+  {
+    "rfc": "PMT180626RK4",
+    "name": "Patronato del Museo Tamayo de Oaxaca, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The complete absence of reported assets, liabilities, equity, and payroll starkly contradicts the entity\u2019s cultural mission, indicating severe operational inactivity or potential shell status. The unpaid board lacks disclosed professional history or independent oversight, compounding governance opacity and raising anomaly risks regarding unreported resource flows. This total lack of financial and human capital data places the trust in the highest risk tier for both money laundering exposure and operational inefficiency."
+  },
+  {
+    "rfc": "MAE2306197T4",
+    "name": "Musicos y Artistas a Escena. Musares, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.9,
+    "rationale": "The entity reports zero assets, liabilities, payroll, and expenditures while claiming active workshops and 30 beneficiaries, creating severe operational and financial incoherence. This complete lack of verifiable financial activity, combined with a family-concentrated board and absence of historical governance data, strongly indicates a dormant shell or high-risk structuring vehicle with critical efficiency and money laundering exposure."
+  },
+  {
+    "rfc": "NTO941011IA0",
+    "name": "Ni\u00f1os Totonacos, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.49,
+    "rationale": "The trust exhibits moderate exposure due to a low direct program allocation ratio (~28%) and a notable gap between donations received and funds deployed, indicating potential fund retention or deployment inefficiencies. While liquidity and leverage metrics are healthy, the structural mismatch between payroll and operational expenses, alongside high donor concentration, raises internal coherence and anomaly flags that require closer audit scrutiny."
+  },
+  {
+    "rfc": "CHU840202R79",
+    "name": "Colegio Humboldt, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.46,
+    "rationale": "The trust maintains strong liquidity and low leverage, indicating solid financial stability, but presents significant coherence and anomaly risks due to the explicit misclassification of teacher salaries and severance as 'donations to students.' This accounting inconsistency suggests potential tax optimization or fund diversion mechanisms, while the oversized, uncompensated board points to governance inefficiencies that warrant moderate regulatory scrutiny."
+  },
+  {
+    "rfc": "CPU6209278V3",
+    "name": "Colegio Puebla, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The entity demonstrates strong financial coherence and low anomaly risk, with expenses tightly aligned to educational operations and minimal reliance on donations, significantly reducing money laundering exposure. While liquidity is constrained and administrative overhead is moderate, the institution maintains healthy leverage and transparent, tuition-driven revenue. Board compensation is proportionate to total payroll, and despite limited historical governance data, no suspicious transactions or structural inconsistencies were identified."
+  },
+  {
+    "rfc": "UMS161219MU9",
+    "name": "Un Mundo sin Hambre, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.93,
+    "rationale": "The entity shows extreme operational opacity and structural anomalies, with exactly 100% of donated funds (~9.58M MXN) immediately funneled into vaguely labeled 'general expenses' without any payroll, volunteers, or programmatic allocation. The governing board is entirely composed of closely related family members receiving zero compensation, and the perfect inflow-outflow match strongly indicates a pass-through shell structure rather than legitimate assistance operations. These factors reflect severe inefficiency, lack of internal controls, and high money laundering exposure."
+  },
+  {
+    "rfc": "ADH141104685",
+    "name": "Animal Defense Heroes, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.75,
+    "rationale": "The trust exhibits high exposure due to a critical accounting anomaly where total donations and related income are identical, indicating severe reporting inconsistencies or potential data manipulation. Operational efficiency is critically low, with zero payroll and volunteers despite substantial administrative costs (35% of total expenses) and vague 'other' expenditures that strongly suggest possible fund diversion or related-party contracting. Furthermore, inflated beneficiary metrics and heavy reliance on foreign public sector donations compound compliance and money laundering risks."
+  },
+  {
+    "rfc": "AMX110217RP5",
+    "name": "Ayudando Mx, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The foundation exhibits severe operational and financial anomalies, notably allocating 92% of its expenses to a single vague 'Otros' category while reporting zero payroll and volunteers despite claiming to serve 72,000 beneficiaries at an unrealistically low cost of ~18 MXN per person. The board consists of two likely related individuals with no compensation, and the lack of transparent expense breakdowns combined with disproportionate fund allocation strongly suggests potential resource diversion or money laundering risks."
+  },
+  {
+    "rfc": "BAR171116R56",
+    "name": "Banco de Alimentos, Ropa y Enseres Domesticos Unidad y Trabajo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The entity exhibits critical operational inactivity with zero current assets, payroll, and volunteers, directly contradicting its stated assistance mission and indicating a dormant or shell structure. Financial coherence is severely compromised by a heavily family-concentrated board and minimal fixed assets, raising strong red flags for credential misuse or tax optimization rather than genuine social impact. These structural and financial anomalies place the trust at very high exposure for inefficiency and potential resource diversion."
+  },
+  {
+    "rfc": "BSU010713QM7",
+    "name": "Bosque Sustentable, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.47,
+    "rationale": "The trust shows moderate exposure driven by a high leverage ratio (84% liabilities) and tight liquidity, which may indicate unspent grant liabilities or underlying financial strain. While project disbursements align closely with its ecological mission and administrative overhead is notably low, the allocation of 25% of total payroll to board members alongside substantial 'other expenditures' raises governance and transparency concerns. These structural and reporting inconsistencies highlight the need for stricter financial controls and clearer expense categorization to mitigate operational and compliance risks."
+  },
+  {
+    "rfc": "FZR170324DP3",
+    "name": "Fundacion Zorro Rojo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.22,
+    "rationale": "The foundation demonstrates high operational efficiency with a 95% program spending ratio and minimal leverage, indicating strong resource management and low financial risk. However, substantial allocations to professional fees and operational coordination (~26% of expenses) combined with high idle liquidity warrant mild scrutiny for potential related-party transactions or fund hoarding. The unpaid board and clear mission-expense alignment mitigate governance and anomaly risks, resulting in a low overall exposure score."
+  },
+  {
+    "rfc": "GES890512T11",
+    "name": "Grupo Ecologico Sierra Gorda, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.62,
+    "rationale": "The trust exhibits high anomaly and coherence risks, primarily driven by 'honorarios pagados a personas' representing 65% of total expenses, irregular board compensation for associate roles, and extreme per-beneficiary cost disparities in the carbon project. While liquidity and leverage ratios remain healthy, these financial opacities and structural inconsistencies strongly suggest potential fund diversion or informal money channeling that warrants immediate regulatory scrutiny."
+  },
+  {
+    "rfc": "CAG110420F85",
+    "name": "Centinelas del Agua, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.32,
+    "rationale": "The trust demonstrates strong financial stability and high program allocation (~88%), reflecting solid operational efficiency and minimal leverage. However, governance concentration among family members, heavy reliance on foreign donations (>50%), and disproportionately low cost-per-beneficiary ratios in several initiatives introduce moderate coherence and anomaly risks that require enhanced transparency and independent auditing."
+  },
+  {
+    "rfc": "CEC901206HB4",
+    "name": "Centro de Educacion y Cultura de Cancun, SC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.71,
+    "rationale": "High exposure is driven by an opaque 'Otros Gastos de Operaci\u00f3n' category that conceals ~75% of total expenses, creating significant diversion and money laundering risks. Financial vulnerability is evident through a current ratio below 1, declining equity, and heavy reliance on tuition fees rather than charitable donations. Governance weaknesses, including an unnamed board administrator and zero compensation, further undermine internal coherence and operational transparency."
+  },
+  {
+    "rfc": "CQR030716SZ7",
+    "name": "Caritas de Quintana Roo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.35,
+    "rationale": "The trust demonstrates strong financial stability with negligible leverage and high liquidity, yet exhibits moderate operational inefficiency due to elevated administrative and logistical costs relative to direct program spending. Significant opacity in the valuation and allocation of 12.3M MXN in in-kind donations, combined with a heavy reliance on service recovery fees rather than pure philanthropy, introduces minor coherence and transparency risks. While no direct money laundering indicators are present, resource allocation practices and internal controls require enhanced oversight to prevent potential misuse."
+  },
+  {
+    "rfc": "FCC910123HH7",
+    "name": "Fundacion Comunitaria Cozumel, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.21,
+    "rationale": "The foundation demonstrates high operational efficiency, directing 94.3% of expenses to core programs while maintaining exceptional liquidity and negligible leverage. Moderate exposure stems from a 40% reliance on foreign donations and unrelated commercial income, which require standard AML monitoring, alongside an unpaid board structure that may limit formal oversight capacity. Overall financial coherence is strong, though the minimal depreciation relative to fixed assets and foreign funding mix warrant routine compliance verification."
+  },
+  {
+    "rfc": "LFU200309UF5",
+    "name": "Lakam Fundacion, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.72,
+    "rationale": "The foundation exhibits high exposure due to operational expenses exceeding reported donations without clear funding sources, alongside vague 'other' expense categorizations that obscure resource allocation. Geographic and beneficiary metrics misalign with its stated environmental mission, while the absence of payroll or volunteers despite claiming operational costs raises significant coherence and anomaly flags. These structural inconsistencies, combined with minimal asset backing and an unpaid two-member board lacking independent oversight, indicate elevated financial monitoring risks and low operational efficiency."
+  },
+  {
+    "rfc": "OCE060407KC6",
+    "name": "Oceanus, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.33,
+    "rationale": "The trust exhibits strong financial stability with high liquidity, negligible debt, and an exceptionally high program-to-admin expense ratio, indicating efficient resource deployment. However, moderate exposure stems from outsized professional fees and travel/fuel costs, which are common vectors for fund diversion, alongside inflated beneficiary reporting and a minimal unpaid board that limits oversight. While no direct laundering indicators are present, these structural anomalies warrant enhanced due diligence to ensure operational transparency."
+  },
+  {
+    "rfc": "SAM981223SW9",
+    "name": "Sembradores de Amor, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The entity reports zero liquidity, zero payroll, and zero volunteers despite an active addiction-recovery mission, indicating severe operational inefficiency and a high probability of being a dormant shell. With 100% of assets locked in fixed property and no cash flow to service liabilities, the financial structure exhibits strong anomalies typical of asset parking or money laundering fronts. The unpaid board and complete absence of operational expenses further undermine internal coherence and raise significant transparency concerns."
+  },
+  {
+    "rfc": "AXT081104D36",
+    "name": "Axtlaton, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.71,
+    "rationale": "The entity exhibits a critical disconnect between its stated medical and educational mission and its operational reality, reporting zero employees, zero payroll, and negligible fixed assets. High liquidity paired with concentrated family control on the board and complete operational inactivity generates severe coherence and anomaly risks, suggesting potential use as a dormant shell or fund-parking vehicle. These structural inconsistencies and absence of verifiable program execution justify a high exposure rating."
+  },
+  {
+    "rfc": "COB7608044D9",
+    "name": "Cabral Obregon, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.18,
+    "rationale": "The trust exhibits exceptional financial solvency and high programmatic efficiency, directing over 98% of resources to assistance activities with negligible debt and a current ratio exceeding 36. Governance shows low conflict-of-interest risk due to unpaid board members and transparent domestic funding, while the absence of geographic dispersion anomalies or unexplained honorarios minimizes money laundering exposure. Minor concentration in a single elderly care program is operationally justified and well-documented, resulting in a very low overall risk profile."
+  },
+  {
+    "rfc": "FRC1809141N1",
+    "name": "Fundacion Real de Catorce Ecologico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The foundation exhibits severe financial and operational inconsistencies, including a critical accounting imbalance where liabilities and equity vastly exceed reported assets, alongside zero fixed assets yet substantial maintenance expenses. The absence of staff or volunteers combined with high professional fees and a single-donor income structure indicates poor resource allocation and elevated anomaly risk. These factors collectively point to very high exposure for inefficiency and potential financial diversion."
+  },
+  {
+    "rfc": "ASI990511DHA",
+    "name": "Sociedad Artistica Sinaloense, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.23,
+    "rationale": "The trust demonstrates high operational efficiency with over 90% of funds directed to cultural programs and maintains strong liquidity with negligible leverage. While the unpaid board and clear mission alignment minimize governance risks, the heavy reliance on individual contractor fees and geographically dispersed expenses introduce moderate financial opacity, though no direct anomalies or circular transactions indicative of money laundering are evident."
+  },
+  {
+    "rfc": "BAM0503295N3",
+    "name": "Bomberos Amigos, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.27,
+    "rationale": "The organization demonstrates robust financial health with near-zero leverage and high liquidity, while operational spending strongly aligns with its emergency response mission. Moderate efficiency risks are flagged by the executive director\u2019s salary comprising 75% of total payroll and a reported income-expense deficit, alongside high non-deductible VAT indicating potential informal procurement. Internal governance remains coherent with standard IAP volunteer structures, resulting in low overall exposure to money laundering or resource mismanagement."
+  },
+  {
+    "rfc": "BAM991111B47",
+    "name": "Banco de Alimentos de los Mochis, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.12,
+    "rationale": "The foundation exhibits exceptional financial stability with a current ratio exceeding 15 and near-zero leverage, while allocating over 90% of expenditures directly to mission-aligned food distribution with minimal administrative overhead. The significant 'cuotas de recuperaci\u00f3n' and large unpaid board are standard for Mexican IAP sustainability and governance frameworks, presenting no evidence of resource diversion or money laundering anomalies."
+  },
+  {
+    "rfc": "CRV23080966A",
+    "name": "Casa de Reposo Vida y Armonia, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.95,
+    "rationale": "The complete absence of assets, liabilities, payroll, and staff directly contradicts the stated mission of operating an elderly care facility, indicating a dormant shell or severe financial underreporting. A single board member with zero compensation and no operational oversight eliminates internal controls and matches classic structural red flags for tax evasion or money laundering fronts. These uniform zero-value anomalies across all financial, operational, and governance metrics justify a maximum risk rating."
+  },
+  {
+    "rfc": "FCE040510D57",
+    "name": "Fundacion Carlos Elizondo Macias, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.54,
+    "rationale": "The foundation exhibits moderate exposure due to a 64% program allocation ratio undermined by disproportionately high administrative costs, notably an unexplained 288,000 MXN 'sorteo' expense and an inflated payroll averaging 354,000 MXN for only three employees. Additionally, the unpaid, family-concentrated board raises conflict-of-interest concerns, while opaque expense categorization and mismatched donation flows suggest potential inefficiencies or disguised resource diversion."
+  },
+  {
+    "rfc": "CMA920430MX6",
+    "name": "Caritas Mazatlan, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.63,
+    "rationale": "The board shows duplicated entries with zero compensation, raising governance transparency concerns, while 68% of expenses are vaguely classified as 'Otros' and an exact numerical match between recovery fees and donation allocations suggests potential reporting manipulation. Coupled with a severe asset-to-income mismatch (15k vs 3.27M MXN) and a low program spending ratio (~47%), these inconsistencies indicate weak internal controls and elevated financial opacity."
+  },
+  {
+    "rfc": "FPI110817JJ0",
+    "name": "Fundacion Pinsa, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.41,
+    "rationale": "The trust demonstrates high nominal efficiency with 96% of funds directed to beneficiaries and zero liabilities, but the near-zero administrative expenses and absence of paid staff to manage multi-state distributions indicate severe operational incoherence and potential underreporting. This structural opacity, combined with 100% single-donor concentration and an unpaid board lacking disclosed historical tenure, raises moderate money laundering risks consistent with a pass-through entity despite the clean balance sheet."
+  },
+  {
+    "rfc": "ICO5202219X4",
+    "name": "Instituto Cultural de Occidente, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The trust demonstrates high operational efficiency and financial stability, primarily funded by recovery fees rather than donations, which minimizes dependency risks and maintains exceptional liquidity with negligible leverage. Administrative costs are well-contained at approximately 12%, payroll aligns with educational sector standards, and the board's compensation structure is transparent and proportional to the institution's scale. No cross-border transactions, circular fund flows, or governance anomalies are present, indicating very low exposure to money laundering or resource mismanagement."
+  },
+  {
+    "rfc": "PCM981123S58",
+    "name": "Patronato Catedral Mazatlan, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.86,
+    "rationale": "The trust exhibits severe financial incoherence with reported expenses (~2.49M MXN) vastly exceeding declared donations (~266K MXN) while showing zero liabilities and minimal assets, indicating unreported funding or accounting manipulation. Operational efficiency is critically low as all expenditures are misclassified as administrative despite a restoration mission, and the anomalous listing of 'financial products' as an expense raises strong concerns regarding data integrity or potential layering. Combined with an unpaid board lacking disclosed oversight history, these structural and financial discrepancies signal very high exposure to inefficiency and illicit fund diversion."
+  },
+  {
+    "rfc": "TAV130628SJ0",
+    "name": "El Trenecito de la Aventura, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.78,
+    "rationale": "The entity exhibits high exposure due to a complete lack of reported assets, equity, and paid staff, relying entirely on volunteers and a family-controlled board which raises significant oversight and self-dealing concerns. While income and expenses mathematically balance, the zero administrative costs, exact pass-through structure, and absence of financial reserves indicate poor operational sustainability and elevated diversion risks typical of minimally compliant or shell entities."
+  },
+  {
+    "rfc": "BAH9505108C3",
+    "name": "Banco de Alimentos de Hermosillo, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.26,
+    "rationale": "The trust demonstrates strong financial stability with high liquidity and minimal leverage, indicating very low financial risk. Operational efficiency is moderate due to substantial logistics and administrative overhead, though expenses and beneficiary targeting align coherently with its food rescue mission. While the high volume of recovery fees relative to direct donations and the unpaid board structure require standard oversight, there are no immediate anomalies suggesting fund diversion or money laundering."
+  },
+  {
+    "rfc": "CHM9912175B2",
+    "name": "Santa Maria Goretti, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The trust exhibits a severe accounting imbalance where reported assets do not align with liabilities and equity, indicating poor financial controls or potential data manipulation. Additionally, 94% of funding comes from a single private donor, administrative costs are disproportionately low, and the board is dominated by family members, raising significant governance and money laundering red flags."
+  },
+  {
+    "rfc": "CTE1905234U7",
+    "name": "La Cachimba Teatro, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The trust exhibits severe financial and operational inconsistencies, receiving over 2.5M MXN in public funds while reporting zero liquidity, no formal payroll, and only 470k MXN in vaguely categorized contractor payments. The complete absence of employees or volunteers directly contradicts its cultural mission, and the concentration of expenses under 'asimilados de sueldos' alongside a family-linked, unpaid board strongly suggests potential fund diversion or informal money routing. These structural anomalies and lack of transparent financial allocation place it at very high risk for inefficiency and money laundering."
+  },
+  {
+    "rfc": "CUB2310166Q6",
+    "name": "Crea Un Bosque, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.9,
+    "rationale": "The entity reports zero assets, liabilities, and equity despite receiving 27,600 MXN in funds, while allocating 100% of expenses to a vague administrative category with zero operational or payroll costs. This exact income-to-admin expense matching, combined with a non-compensated board and complete absence of mission-aligned activities, indicates a highly inefficient pass-through structure with severe financial incoherence and strong money laundering red flags."
+  },
+  {
+    "rfc": "FGM1410228D4",
+    "name": "Fundacion Grupo Molina, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.74,
+    "rationale": "The foundation exhibits high financial risk and operational inefficiency, with 63% of donations consumed by payroll and 42.6% of funds unaccounted for in program allocations. A family-dominated board, poor liquidity (0.35), high leverage (71%), and implausibly low per-beneficiary costs further suggest weak internal controls and potential resource diversion. These structural and reporting anomalies place the entity in a high-exposure category for both money laundering and mismanagement risks."
+  },
+  {
+    "rfc": "BAN010221372",
+    "name": "Banco de Alimentos de Navojoa, IAP",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.32,
+    "rationale": "The trust demonstrates strong financial health with minimal leverage and high liquidity, aligning well with its regional food security mission. However, disproportionately high warehouse logistics costs (4.43M MXN) and significant commercial recovery fees introduce moderate operational anomalies that warrant closer audit scrutiny. While the current unpaid board structure is standard for Mexican IAPs, the absence of historical governance data and granular expense categorization limits full transparency, keeping the overall exposure in the low-risk category."
+  },
+  {
+    "rfc": "FHR1103115S9",
+    "name": "Fundacion Hector y Reina, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.76,
+    "rationale": "The foundation exhibits high financial risk due to poor liquidity (current ratio of 0.46) and significant leverage (70.7% debt-to-assets), alongside low operational efficiency with only 46.8% of donations directly funding assistance programs. Critical internal inconsistencies, particularly the stark discrepancy between reported board compensation (~$236k MXN) and total payroll ($10.8k MXN), raise strong concerns regarding data manipulation or informal labor practices. Combined with 100% donation concentration from a single source and minimal financial transparency, these factors indicate a high exposure to resource diversion and potential compliance anomalies."
+  },
+  {
+    "rfc": "BAV181219QQ9",
+    "name": "Banco de Alimentos de Villahermosa, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The complete absence of reported assets, equity, and cash donations fundamentally contradicts the operational needs of a food bank, signaling severe inefficiency or potential dormancy. Governance is concentrated among related individuals with unpaid roles, which weakens internal controls and raises coherence concerns. This financial void, combined with negligible transactional volume, creates high exposure to operational anomalies and potential shell-entity misuse."
+  },
+  {
+    "rfc": "CTE820125DN5",
+    "name": "Colegio Tenosique, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.46,
+    "rationale": "The trust exhibits moderate exposure primarily due to incoherent donation reporting, where 620,200 MXN in received funds are listed with 0 MXN allocated to beneficiaries, raising transparency and tracking concerns. While core financial metrics remain stable with low leverage (11.2%) and strong liquidity (3.17x), the operational deficit and lack of expense segregation between administrative and operational costs indicate governance gaps. Additionally, an unpaid board without disclosed professional history may limit oversight capacity, warranting improved financial controls and reporting rigor."
+  },
+  {
+    "rfc": "FET170508NR8",
+    "name": "Fundacion del Empresariado Tabasque\u00f1o, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The foundation exhibits severe financial incoherence, with liabilities vastly exceeding reported assets and an accounting structure that indicates critical insolvency risk. Operational efficiency is extremely low, as payroll consumes over 82% of total income while program spending per beneficiary is implausibly low (averaging ~30\u2013180 MXN), strongly suggesting data manipulation or resource diversion. These structural anomalies, combined with a significant operating deficit and absence of volunteer leverage, point to a very high exposure to mismanagement and potential illicit financial flows."
+  },
+  {
+    "rfc": "SPM100429F20",
+    "name": "Sembrando para Producir Ma\u00f1ana, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The entity exhibits severe operational incoherence, claiming a broad social assistance mission while reporting zero staff, volunteers, and payroll expenses, indicating either dormancy or a potential shell structure. High fixed asset concentration alongside family-linked board members and absent operational cash flows raises significant anomaly and money laundering risks. Consequently, the foundation demonstrates critically low efficiency and high exposure to financial irregularities."
+  },
+  {
+    "rfc": "CCV850521UC3",
+    "name": "Caritas de Ciudad Victoria, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.69,
+    "rationale": "The trust shows high exposure due to a critically low direct aid ratio (~10%) versus excessive payroll allocation (~78%), signaling severe operational inefficiency and potential fund hoarding. Internal coherence is compromised by a family-concentrated board and significant unspent reserves, while tax surcharges and non-deductible VAT indicate compliance anomalies that elevate money diversion risks."
+  },
+  {
+    "rfc": "FAH231005UN6",
+    "name": "Fundacion Agroalimentaria y Humanitaria, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.92,
+    "rationale": "The entity exhibits a complete disconnect between its broad humanitarian mission and its absolute lack of financial resources, operational staff, and board compensation, indicating a dormant shell structure. This zero-activity profile across all financial and operational metrics is a classic red flag for potential money laundering or tax evasion, as it lacks any legitimate economic footprint to justify its SAT registration. Consequently, it presents very high exposure due to severe inefficiency, structural incoherence, and extreme anomaly risk."
+  },
+  {
+    "rfc": "MPA690625IZ3",
+    "name": "Mama Paulita, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.44,
+    "rationale": "The foundation exhibits moderate exposure due to a substantial unallocated 'Diversos' expense line and a family-controlled board reporting zero administrative costs, which masks true operational efficiency and raises transparency concerns. While financial risk is low given high liquidity and negligible debt, the anomalously low fixed assets for a residential shelter and high interest income on cash reserves suggest potential fund hoarding or inefficient capital deployment. These reporting gaps and structural anomalies warrant enhanced oversight to prevent resource diversion and ensure mission alignment."
+  },
+  {
+    "rfc": "CJD130826BZ4",
+    "name": "Centro Juvenil para el Desarrollo Humano Integral, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.63,
+    "rationale": "The trust shows high exposure due to severe operational incoherence, reporting zero payroll and administrative costs despite managing over 1M MXN in donations and funding a 470k MXN construction project. Nearly 51% of incoming funds remain unallocated without clear justification, creating significant anomaly and diversion risks. Although the board is unpaid and liquidity is strong, the unrealistic cost structure and high cash retention indicate poor efficiency and potential vulnerabilities to fund parking or money laundering."
+  },
+  {
+    "rfc": "FMM090514A35",
+    "name": "Fundacion Miguel Morales Lopez, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The foundation exhibits critical financial distress with near-zero equity and 100% administrative expenses, directly contradicting its stated assistance mission. A severe discrepancy between the board member's reported salary (~$105k) and total payroll ($8k), combined with exclusive family control of the governing body, raises strong indicators of fund diversion and poor operational efficiency. These structural and financial anomalies place the entity at very high risk for money laundering and resource mismanagement."
+  },
+  {
+    "rfc": "MCI180222227",
+    "name": "Meson del Cielo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.42,
+    "rationale": "While 96% of funds are directed to programmatic activities, the complete absence of formal payroll for 750 beneficiaries and reliance on unpaid family board members indicate significant governance and compliance gaps. High in-kind donations (57% of total) combined with vague expense categorization in a high-risk border region elevate money laundering and diversion risks, warranting closer audit scrutiny."
+  },
+  {
+    "rfc": "AJU160718661",
+    "name": "Arbol de Justicia, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.78,
+    "rationale": "The trust exhibits severe accounting inconsistencies, with reported assets failing to balance against liabilities and equity, alongside a structural deficit where program disbursements exceed total donations. Operational coherence is critically compromised by zero salaried staff managing nearly 877,000 MXN in aid, raising strong suspicions of fund diversion through unreported channels or volunteer networks. Additional anomalies, such as a misclassified foreign board member and unexplained administrative fees, further indicate high exposure to financial mismanagement and potential money laundering."
+  },
+  {
+    "rfc": "CTA840607GD1",
+    "name": "Caritas de Tampico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.28,
+    "rationale": "The trust exhibits strong financial health with high liquidity, negligible leverage, and over 80% of funds allocated directly to programs, reflecting high operational efficiency. However, significant data inconsistencies in beneficiary reporting, unexplained international management expenses, and a large unpaid board introduce moderate governance and transparency risks that slightly elevate the overall exposure."
+  },
+  {
+    "rfc": "MCT210531770",
+    "name": "Museo de la Ciudad Tampico, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The trust demonstrates high operational efficiency and strong internal coherence, with transparent funding sources, minimal administrative overhead, and expenses that align logically with its fixed asset base and visitor impact. Financial risk is negligible due to extremely low leverage and a healthy operational surplus, while the absence of cross-border transactions, unpaid board members, and consistent accounting metrics indicate a very low probability of money laundering or resource diversion."
+  },
+  {
+    "rfc": "ABC080728LA5",
+    "name": "Apoyandonos para el Bienestar Comun, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.88,
+    "rationale": "The foundation exhibits severe anomalies, notably 17 identical disbursement amounts that exactly match total cash donations, suggesting structured pass-through or fabricated reporting. Operational efficiency is critically low due to near-zero liquidity and an unrealistically low administrative overhead ratio, while high fixed assets and unpaid board members further obscure financial transparency. These inconsistencies strongly indicate high money laundering risk and poor resource management."
+  },
+  {
+    "rfc": "BAZ160728KX1",
+    "name": "Banco de Alimentos para Zonas Rurales, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The trust exhibits severe internal incoherence and anomaly risk, evidenced by a zero balance sheet, implausible distribution amounts (e.g., 0.04 MXN allocated to thousands of beneficiaries), and complete reliance on unpaid volunteers with no operational staff. While absolute financial volume is low, the structural lack of accounting controls, mathematical inconsistencies, and potential symbolic reporting indicate very high exposure to inefficiency and governance vulnerabilities that could mask improper resource diversion."
+  },
+  {
+    "rfc": "CTL1602221L1",
+    "name": "Caritas Tlaxcala, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.46,
+    "rationale": "The trust demonstrates strong financial solvency with negligible liabilities, but shows moderate exposure due to a high administrative-to-program expense ratio (~52%) and significant unclassified 'miscellaneous' spending. The complete absence of paid staff alongside substantial operational costs for fuel, maintenance, and professional fees creates internal coherence gaps, indicating potential inefficiencies or opaque resource allocation that warrants closer audit scrutiny."
+  },
+  {
+    "rfc": "FAG221116UQ1",
+    "name": "Fundacion Adrian Guillen, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.9,
+    "rationale": "The foundation exhibits zero operational footprint, assets, and payroll despite claiming extensive community impact, alongside a critical inconsistency between its stated founding year (2000) and its 2022 RFC registration. The exclusive reliance on in-kind donations without transparent distribution records, combined with a minimal two-person board, strongly indicates a shell structure optimized for tax deductions rather than legitimate charitable activity. These structural anomalies and lack of financial coherence place it at very high risk for resource diversion and potential money laundering."
+  },
+  {
+    "rfc": "AEP831117RY9",
+    "name": "Asociacion Educativa Poza Rica, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.68,
+    "rationale": "The organization shows high financial risk due to a critical accounting mismatch where reported liabilities and equity exceed total assets, alongside dangerously low liquidity ratios. Although operational spending aligns with its educational mandate, the two-member unpaid board lacks historical transparency and adequate oversight for a 49-staff entity, while the exact donation pass-through and high unclassified expenses suggest moderate transparency gaps and potential resource diversion."
+  },
+  {
+    "rfc": "AMA010327A67",
+    "name": "Amigos de Maria Auxiliadora, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.73,
+    "rationale": "The trust exhibits high financial risk due to a severe operational deficit where reported expenses exceed total income by nearly 47%, strongly suggesting unreported funding sources or accounting manipulation. The complete absence of paid staff and volunteers managing large-scale food distribution, combined with atypical commercial revenue from donut sales, creates significant internal coherence and anomaly risks. While direct aid spending aligns with its stated mission, these structural financial inconsistencies and lack of operational transparency indicate high exposure to potential mismanagement or illicit fund diversion."
+  },
+  {
+    "rfc": "ATR911121KQ0",
+    "name": "Albergue el Trebol, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.72,
+    "rationale": "The foundation exhibits high exposure due to severe operational incoherence, notably reporting zero payroll and volunteers while claiming to run a residential shelter, alongside unrelated hardware sales. A significant unexplained surplus between total income (~505k MXN) and reported program expenses (~141k MXN), combined with questionable accounting entries like classifying donated products as expenses, raises substantial money laundering and efficiency risks. The unpaid board and fragmented, low-value beneficiary allocations further undermine financial transparency and programmatic coherence."
+  },
+  {
+    "rfc": "FSA051130P14",
+    "name": "Fundacion Salvemos el Agua, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.23,
+    "rationale": "The trust exhibits low financial risk due to negligible liabilities and high liquidity, with strong operational coherence between its ecological mission and volunteer-driven activities. However, minor anomalies such as identical donation and recovery fee amounts, alongside expenses slightly exceeding reported income, indicate potential reporting inconsistencies or inefficient fund deployment. Overall, these factors point to low exposure, with no significant indicators of money laundering or severe mismanagement."
+  },
+  {
+    "rfc": "ICM420101TF1",
+    "name": "Instituto Cientifico Motolinia, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.21,
+    "rationale": "The organization demonstrates strong financial stability with negligible leverage, high liquidity, and a positive operational cash flow primarily funded by tuition rather than donations. Although expense reporting is heavily categorized under administrative accounts and board compensation is zero, there are no structural anomalies, cross-border transactions, or suspicious fund movements indicative of money laundering. Overall, the entity shows low financial risk and consistent operational alignment with its educational mission."
+  },
+  {
+    "rfc": "LNI910122SR8",
+    "name": "Laboratorio Nacional de Informatica Avanzada, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.62,
+    "rationale": "While the unpaid board consists of recognized national academics, the trust exhibits high financial risk due to a critical balance sheet discrepancy, very low liquidity (0.25), and high leverage. These structural weaknesses, combined with rigid pass-through funding and unexplained foreign expenses, indicate significant exposure to liquidity stress and potential governance gaps."
+  },
+  {
+    "rfc": "MKA120723MD8",
+    "name": "Maseual Kamatis, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.89,
+    "rationale": "The complete absence of assets, payroll, volunteers, and financial activity starkly contradicts the stated cultural mission, indicating a dormant or shell structure with severe operational inefficiency. The board shows familial clustering (Ramirez/Medina) with zero compensation, raising governance and independence red flags typical of nominal entities. These extreme zero-value anomalies across all financial and operational metrics trigger maximum exposure for potential regulatory arbitrage or illicit fund routing."
+  },
+  {
+    "rfc": "PIC130111IC6",
+    "name": "Polo de Inteligencia y Competitividad Empresarial, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.9,
+    "rationale": "The entity exhibits severe financial anomalies, including a fundamental accounting imbalance and extreme leverage (3.26x), indicating poor financial management or potential data manipulation. With zero employees, volunteers, and payroll expenses, it completely lacks the operational capacity to execute its stated assistance and competitiveness mission, strongly suggesting a dormant or shell structure. These factors, combined with negligible liquidity and an entirely unpaid board, point to very high exposure for resource diversion and inefficiency."
+  },
+  {
+    "rfc": "TMM1602084G4",
+    "name": "Tortilla de Maiz Mexicana, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The organization exhibits severe financial inconsistencies, most notably a critical accounting mismatch where reported liabilities and equity exceed total assets by nearly 1 million pesos, and payroll consumes 94% of total donation income. Project reporting shows highly questionable operational efficiency, with flagship initiatives claiming hundreds of thousands of beneficiaries at less than one peso per person, strongly suggesting inflated impact metrics or potential fund diversion. These structural anomalies, combined with disproportionate professional fees and fragmented micro-grant allocations, indicate high exposure to mismanagement and potential financial irregularities."
+  },
+  {
+    "rfc": "BAC141112KU2",
+    "name": "Banco de Alimentos de Cordoba, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.72,
+    "rationale": "The foundation exhibits high exposure primarily due to a massive, unclassified 'Otras Erogaciones' line item (7.88M MXN) comprising nearly 70% of total expenses, which severely compromises financial transparency and internal coherence. Although the unpaid board and targeted food distribution align with its stated mission, the stark lack of expense granularity combined with heavy reliance on in-kind donations creates significant vulnerabilities for potential resource diversion and money laundering."
+  },
+  {
+    "rfc": "BAV040309JN0",
+    "name": "Banco de Alimentos de Veracruz, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.18,
+    "rationale": "The trust exhibits exceptional operational efficiency with administrative expenses under 1% and a highly conservative leverage ratio (0.02), indicating minimal financial risk and strong liquidity. Although the substantial 'cuotas de recuperaci\u00f3n' inflows and inter-organizational in-kind transfers warrant routine monitoring, resource allocation closely aligns with its stated mission without governance irregularities, related-party anomalies, or suspicious cash flows."
+  },
+  {
+    "rfc": "JAG670428DA7",
+    "name": "Jose Antonio Gonzalez Pe\u00f1a, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.23,
+    "rationale": "Strong liquidity (3.25) and low leverage (0.20) indicate minimal financial risk, while payroll and operational expenses align coherently with the educational mission. The board structure shows standard, low compensation with no evident conflicts of interest, and despite a notable share allocated to professional services, there are no transactional anomalies, foreign flows, or structural inconsistencies suggesting money laundering or resource diversion."
+  },
+  {
+    "rfc": "MAD220721690",
+    "name": "Mujer Alfa, Descubrete y Avanza, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.92,
+    "rationale": "The entity exhibits a complete disconnect between its expansive social mission and a total absence of financial assets, payroll, or operational activity, indicating a dormant or shell structure. The board is heavily concentrated among individuals with overlapping family surnames and zero compensation, raising significant governance and internal coherence concerns. These structural anomalies, combined with null financial transparency, strongly suggest high exposure to resource diversion or money laundering facilitation."
+  },
+  {
+    "rfc": "AAV070707B41",
+    "name": "Alas Al Vuelo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.49,
+    "rationale": "The trust exhibits moderate exposure due to a high concentration of unclassified expenses ('otros gastos' at ~31%) and a board that comprises the entire payroll with a familial link, raising internal coherence and anomaly concerns. While financial risk is minimal given strong liquidity and negligible leverage, the exact matching of donation inflows to program outflows alongside significant administrative overhead suggests potential data manipulation or resource diversion. These factors collectively place the entity in the moderate risk/efficiency bracket."
+  },
+  {
+    "rfc": "AML700107A67",
+    "name": "Avelino Montes Linaje, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.62,
+    "rationale": "Despite healthy initial liquidity, the organization operates at a structural deficit when combining payroll and detailed expenses, while a highly opaque 4.44M MXN 'Diversos' category accounts for nearly 30% of total outflows and signals strong anomaly risk. Although the unpaid board minimizes immediate conflict-of-interest concerns, the severe lack of granular expense breakdown and exact matching of tuition income to donation destinations indicate moderate-to-high reporting inconsistencies and potential fund diversion vulnerabilities."
+  },
+  {
+    "rfc": "BAM961115J85",
+    "name": "Banco de Alimentos de Merida, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The organization demonstrates high operational efficiency with ~64% of expenses directly allocated to aid, negligible financial leverage, and strict income-expense parity. Minor reporting gaps exist for unmonetized beneficiary distributions in specific municipalities and heavy reliance on corporate in-kind donations, but the transparent cost structure, high liquidity, and unpaid board governance show no statistical or structural indicators of fund diversion or money laundering."
+  },
+  {
+    "rfc": "CMO951207JK4",
+    "name": "Colegio Montejo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.22,
+    "rationale": "The trust exhibits strong financial stability with high liquidity, negligible leverage, and coherent alignment between tuition-driven revenue and educational operational expenses. However, the single-member board structure limits governance oversight, and the exact matching of donation allocations to total expenses indicates rigid reporting practices that warrant standard monitoring. Overall, resource efficiency is high with minimal indicators of financial manipulation or money laundering risk."
+  },
+  {
+    "rfc": "CYU880130GS1",
+    "name": "Caritas de Yucatan, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.58,
+    "rationale": "The organization demonstrates moderate operational inefficiency, directing only ~40% of total expenses to direct aid while administrative, payroll, and depreciation costs consume the majority of resources. Critical reporting anomalies, particularly the systematic $0.01 MXN entries claiming identical beneficiary counts across all Mexican states, strongly suggest data manipulation to artificially inflate social impact metrics. Combined with suboptimal short-term liquidity (current ratio <1) and concentrated familial ties within the board, these factors indicate a clear need for stricter financial controls and transparent reporting practices."
+  },
+  {
+    "rfc": "EMA200716V44",
+    "name": "La Esperanza del Mayab, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.82,
+    "rationale": "The organization reports zero staff, volunteers, and payroll despite claiming assistance activities and incurring over 320,000 MXN in vaguely categorized operating expenses, indicating severe operational inefficiency and high anomaly risk. The unpaid, likely family-linked board and the stark disconnect between its stated social mission and actual human resource footprint further suggest potential fund diversion or shell entity usage. These structural and financial inconsistencies place it in the very high exposure tier for money laundering and poor resource management."
+  },
+  {
+    "rfc": "FEM991210UI1",
+    "name": "Fundacion Emanuel de Merida, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.65,
+    "rationale": "The foundation exhibits severe financial and operational inconsistencies, most notably a ~$19.8M in-kind donation volume that drastically exceeds reported expenses and total assets, indicating high risk of overvaluation or resource diversion. Operational coherence is critically compromised by a zero-payroll structure and unpaid board attempting to manage large-scale aid distribution, alongside a clear mismatch between the stated mission (abused children in shelters) and reported beneficiaries (low-income families). These anomalies, combined with poor liquidity and vague expense reporting, place the entity in a high-risk category for potential money laundering and inefficient management."
+  },
+  {
+    "rfc": "MVE090324UUA",
+    "name": "Merida Verde, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.92,
+    "rationale": "The entity exhibits severe accounting inconsistencies, with reported liabilities and equity significantly exceeding total assets, indicating potential data manipulation or insolvency. Combined with zero payroll, no volunteers, and an entirely unpaid board, the organization lacks operational coherence relative to its stated ecological mission, strongly suggesting a dormant or shell structure with high money laundering and inefficiency risks."
+  },
+  {
+    "rfc": "UMA870531DG9",
+    "name": "Universidad del Mayab, SC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.85,
+    "rationale": "The entity exhibits severe structural anomalies, notably channeling nearly 100% of received donations to a single recipient while reporting 187.7 million MXN in unclassified 'other' expenses that vastly exceed its documented income. Combined with a disproportionately low payroll, an incomplete board registry, and extreme opacity in operational spending, these factors indicate very high exposure to potential fund diversion and inefficient resource management."
+  },
+  {
+    "rfc": "BAF060627EE2",
+    "name": "Banco de Alimentos de Fresnillo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.78,
+    "rationale": "The trust exhibits high exposure due to a suspicious exact match between total donations and 'recovery fees,' alongside a massively aggregated expense line that obscures actual fund allocation. The reported cost per beneficiary is economically unviable for food distribution, and the unpaid, family-linked board oversees significant financial opacity, indicating strong risks of inefficiency and potential money laundering."
+  },
+  {
+    "rfc": "BAZ990609J93",
+    "name": "Banco de Alimentos de Zacatecas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.15,
+    "rationale": "The foundation demonstrates high operational efficiency with program expenses heavily outweighing administrative costs, and its financial flows align coherently with its food rescue mission across 30 municipalities. While liquidity is tight and income relies significantly on recovery fees rather than traditional donations, there are no structural anomalies, foreign transactions, or board compensation irregularities that suggest money laundering or mismanagement. Overall, the transparent expense breakdown, unpaid governance structure, and mission-consistent distribution indicate very low exposure to financial risk or illicit activity."
+  },
+  {
+    "rfc": "UAF850730QR0",
+    "name": "Universidad Autonoma de Fresnillo, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.66,
+    "rationale": "The trust shows high exposure due to an operational deficit, heavily skewed administrative expenses, and a large unpaid board contrasted with substantial 'honorarios' payouts that may mask related-party transactions. The exact 1-peso split in 'Varios' expenses and vague cost categorization strongly indicate accounting manipulation or potential fund diversion."
+  },
+  {
+    "rfc": "VFZ0910211A1",
+    "name": "Vida y Familia Zacatecas, AC",
+    "model": "qwen/qwen3.6-plus:free",
+    "exposure": 0.43,
+    "rationale": "While the foundation demonstrates strong operational efficiency with 91% of funds directed to its mission and healthy liquidity ratios, significant governance anomalies\u2014including three individuals listed as president and a large unpaid board\u2014raise internal coherence concerns. The disproportionate allocation (53%) to 'honorarios asimilados a salarios' alongside heavy reliance on public sector funding creates moderate exposure to potential resource diversion, warranting stricter oversight to mitigate money laundering risks."
   }
 ]

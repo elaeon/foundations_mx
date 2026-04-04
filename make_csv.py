@@ -97,7 +97,7 @@ def read_excel_and_save_csv(sheet_columns_dict, empty_cols, data_folder="data", 
                                 pl.col("Número de beneficiados").sum()
                             ])
                             df = df.rename({"Monto": f"{sheet_name}_Monto"})
-                            df = df.cast({f"{sheet_name}_Monto": pl.Float64})
+                            df = df.cast({f"{sheet_name}_Monto": pl.Float64, "Número de beneficiados": pl.Float64})
                         elif sheet_name == "Gastos":
                             df = df.group_by("key").agg([
                                     pl.col("Monto nacional operación").sum(), 
