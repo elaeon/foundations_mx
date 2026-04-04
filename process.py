@@ -73,7 +73,7 @@ def main():
     }
 
     parser = argparse.ArgumentParser(description="Convert excel to markdown")
-    parser.add_argument("--year", required=True, type=int)
+    parser.add_argument("--year", required=False, type=int, default=2024)
     parser.add_argument("--force", required=False, action="store_true", help="Re-process even if .md exists")
 
     args = parser.parse_args()
@@ -83,11 +83,12 @@ def main():
         with open("fundations.csv") as f:
             fundations = csv.DictReader(f)
         
+            base_path = f"markdown/{args.year}"
             for fundation in fundations:
                 rfc = fundation["Rfc"]
-                md_path = f"markdown/{rfc}.md"
-                output_path = Path("markdown")
+                output_path = Path(base_path)
                 output_path.mkdir(exist_ok=True)
+                md_path = output_path.joinpath(f"{rfc}.md")
 
                 if not args.force and Path(md_path).exists():
                     skipped += 1
