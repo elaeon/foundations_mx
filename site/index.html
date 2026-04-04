@@ -11,7 +11,7 @@
   --bg: #0a0a0f;
   --bg2: #12121a;
   --fg: #e0e0e8;
-  --fg2: #888894;
+  --fg2: #c9cacc;
 }
 
 body {
@@ -210,7 +210,7 @@ canvas#canvas {
 <div id="header">
   <div class="intro">
     <h1>Mexico Fundations & Trust Visualizer <a href="https://github.com/elaeon/fundations_mx">GitHub</a></h1>
-    <p>This is a research tool that visualizes <b><span id="statTotalFund">&mdash;</span></b> <b>fundations & trust</b> from the <a href="https://eu2-por-pro-don-net-cons.azurewebsites.net/Consulta/Acceso?ReturnUrl=%2FConsulta%2FTransparencia">SAT Donatarias</a>, covering <b><snap id="statTotalBenef">&mdash;</span></b> <b>beneficiaries</b> across the Mexican's states. Each rectangle's <b>area</b> is proportional to total beneficiaries <b>Color</b> shows the selected metric &mdash; toggle between patrimony, work forcs, volunteers, wages, exposure. Click any tile to view its full data. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring Fundations data visually.</p>
+    <p>This is a research tool that visualizes <b><span id="statTotalFund">&mdash;</span></b> <b>fundations & trust</b> from the <a href="https://eu2-por-pro-don-net-cons.azurewebsites.net/Consulta/Acceso?ReturnUrl=%2FConsulta%2FTransparencia">SAT Donatarias</a>, covering <b><snap id="statTotalBenef">&mdash;</span></b> <b>beneficiaries</b> across the Mexican's states. Each rectangle's <b>area</b> is proportional to total beneficiaries. <b>Color</b> shows the exposure score. Click any tile to view its full data. This is not a report, a paper, or a serious economic publication &mdash; it is a development tool for exploring Fundations data visually.</p>
     <p><b>LLM-powered coloring:</b> The <a href="https://github.com/elaeon/fundations_mx">source code</a> includes scrapers, parsers, and a pipeline for writing custom LLM prompts to score and color fundations by any criteria. You write a prompt, the LLM scores each occupation, and the treemap colors accordingly. You could write a different prompt for any question &mdash; and re-run the pipeline to get a different coloring.</p>
     <details>
       <summary>View the Digital AI Exposure scoring prompt (example)</summary>
