@@ -2,11 +2,11 @@
 
 A research tool for visually exploring transparency in Fundations Statistics [Donatarias consulta pública](https://eu2-por-pro-don-net-cons.azurewebsites.net/Consulta/Acceso?ReturnUrl=%2FConsulta%2FTransparencia) data. This is not a report, a paper, or a serious economic publication — it is a development tool for exploring Fundations & Trust data visually.
 
-**Live demo: **
+**Live demo: [fundations_mx](https://elaeon.github.io/fundations_mx/)**
 
 ## What's here
 
-The Site **10017 fundations & trusts** in many years, with detailed data on donatios. We (eventually) scraped all of it and built an interactive treemap visualization where each rectangle's **area** is proportional to total money and **color** shows the selected metric.
+This repo **Mexico fundations & trusts** review detailed data on donatios. We scraped an small portion of all of it and built an interactive treemap visualization where each rectangle's **area** is proportional to beneficiaries and **color** shows the exposure metric.
 
 ## LLM-powered coloring
 
@@ -53,7 +53,7 @@ OPENROUTER_API_KEY=your_key_here
 
 ```bash
 
-# Generate CSV summary
+# Generate CSV summary (fundations.csv is already in the repo, so you can skip this step).
 uv run python make_csv.py
 
 # Generate Markdown from Excel
