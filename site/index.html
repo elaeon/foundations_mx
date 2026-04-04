@@ -570,11 +570,11 @@ function updateExposureStats(totalJobs) {
 
   // Tier breakdown
   const tierDefs = [
-    { label: "Minimal (0\u20132)", lo: 0, hi: 1.5, mid: 2 },
-    { label: "Low (3\u20134)", lo: 3, hi: 4, mid: 4.5 },
+    { label: "Minimal (0\u20132)", lo: 0, hi: 2, mid: 1.5 },
+    { label: "Low (3\u20134)", lo: 3, hi: 4, mid: 3.5 },
     { label: "Moderate (5\u20136)", lo: 5, hi: 6, mid: 5.5 },
     { label: "High (7\u20138)", lo: 7, hi: 8, mid: 8.5 },
-    { label: "Very high (9\u20131)", lo: 9, hi: 1, mid: 9.5 },
+    { label: "Very high (9\u20131)", lo: 9, hi: 10, mid: 9.5 },
   ];
   const tiers = tierDefs.map(t => {
     let size = 0;
