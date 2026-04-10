@@ -98,28 +98,36 @@ def main():
     parser.add_argument("--force", action="store_true",
                         help="Re-score even if already cached")
     parser.add_argument("--test", type=str, required=False, nargs='+', default=[])
+    parser.add_argument("--add", type=str, required=False, nargs='+', default=[])
     parser.add_argument("--year", required=False, default=2024, type=int)
 
     args = parser.parse_args()
     with open("fundations.json") as f:
         fundations = json.load(f)
     
+    scores = {}
     if args.test:
+        rfc_list = args.test
+    elif args.add:
+        rfc_list = args.add
+    else:
+        rfc_list = []
+
+    if len(rfc_list) > 0:
         subset = []
         for fund in fundations:
-            if fund["rfc"] in args.test:
+            if fund["rfc"] in rfc_list:
                 subset.append(fund)
     else:
         subset = fundations[args.start:args.end]
 
-    # Load existing scores
-    scores = {}
-    if os.path.exists(OUTPUT_FILE) and not args.force:
-        with open(OUTPUT_FILE) as f:
-            for entry in json.load(f):
-                scores[entry["rfc"]] = entry
+    if not args.test:
+        # Load existing scores
+        if os.path.exists(OUTPUT_FILE) and not args.force:
+            with open(OUTPUT_FILE) as f:
+                for entry in json.load(f):
+                    scores[entry["rfc"]] = entry
     
-
     print(f"Scoring {len(subset)} occupations with {args.model}")
     print(f"Already cached: {len(scores)}")
 
@@ -156,8 +164,11 @@ def main():
             errors.append(rfc)
 
         # Save after each one (incremental checkpoint)
-        with open(OUTPUT_FILE, "w") as f:
-            json.dump(list(scores.values()), f, indent=2)
+        if not args.test:
+            with open(OUTPUT_FILE, "w") as f:
+                json.dump(list(scores.values()), f, indent=2)
+        else:
+            print(scores)
 
         if i < len(subset) - 1:
             time.sleep(args.delay)
