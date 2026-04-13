@@ -19,12 +19,12 @@ The repo includes scrapers, parsers, and a pipeline for writing custom LLM promp
 
 ## Data pipeline
 
-1. **Scrape** (`scrape.py`) — Not yet implemented.
+1. **Fetch** (`fetch.py`) not really need it if you download the foundation dataset.
 2. **Parse** (`parse_foundations.py`, `process.py`) — Converts Excel into clean json (foundations.json) or Markdown files in `markdown/`.
 3. **Tabulate** (`make_csv.py`) — Extracts structured fields into `foundations.csv`.
 4. **Score** (`score.py`) — Sends each foundation's Markdown description to an LLM with a scoring rubric. Each foundation gets a score from 0-1 with a rationale. Results saved to `scores.json`. Fork this to write your own prompts.
 5. **Build site data** (`build_site_data.py`) — Merges CSV stats and AI exposure scores into a compact `site/data.json` for the frontend.
-6. **Website** (`site/index.html`) — Interactive treemap visualization with four color layers: BLS Outlook, Median Pay, Education, and Digital AI Exposure.
+6. **Website** (`site/index.html`) — Interactive treemap visualization with color layer for risk exposure.
 
 ## Key files
 
@@ -48,9 +48,14 @@ Requires an OpenRouter API key in `.env`:
 OPENROUTER_API_KEY=your_key_here
 ```
 
-Download the [dataset](https://zenodo.org/records/19498457) 
-into a folder named "data" in the same level as the folder "site"
-uncompress it and rename the folder to 2024
+Download the [foundations dataset](https://zenodo.org/records/19498457) 
+This dataset contains more than 10,000 files, so I recommend you to copy only
+a subset of these into a folder named "data/2024" in the same level as the folder "site".
+You can look in foundations.csv, the column "ref" has the file names used in this visualization.
+
+
+## Agent setup
+Or in your agent code type "setup" to manage the previous steps.
 
 ## Usage
 
