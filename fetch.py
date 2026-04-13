@@ -141,9 +141,9 @@ def process_rfcs() -> None:
         print("No RFC entries to process")
         return
     
-    # Ensure fundations directory exists
-    fundations_dir = Path.home() / "fundations"
-    fundations_dir.mkdir(exist_ok=True)
+    # Ensure foundations directory exists
+    foundations_dir = Path.home() / "foundations"
+    foundations_dir.mkdir(exist_ok=True)
     
     def cmd_build(rfc, btn1, btn2):
         commands_opt = [
@@ -185,13 +185,13 @@ def process_rfcs() -> None:
                         result = run_playwright_command("click", ["e47"])
                         break
         else:
-            # Move the file to fundations directory
+            # Move the file to foundations directory
             source_file = Path(".playwright-cli/InformeTransparencia.xlsx")
             retry = 0
             while retry < 3:
                 time.sleep(1)
                 if source_file.exists():
-                    destination_file = fundations_dir / f"{rfc}.xlsx"
+                    destination_file = foundations_dir / f"{rfc}.xlsx"
                     try:
                         shutil.move(str(source_file), str(destination_file))
                         print(f"Saved: {destination_file}")

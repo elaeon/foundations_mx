@@ -80,12 +80,12 @@ def main():
     if args.year:
         processed = 0
         skipped = 0
-        with open("fundations.csv") as f:
-            fundations = csv.DictReader(f)
+        with open("foundations.csv") as f:
+            foundations = csv.DictReader(f)
         
             base_path = f"markdown/{args.year}"
-            for fundation in fundations:
-                rfc = fundation["Rfc"]
+            for foundation in foundations:
+                rfc = foundation["Rfc"]
                 output_path = Path(base_path)
                 output_path.mkdir(exist_ok=True)
                 md_path = output_path.joinpath(f"{rfc}.md")
@@ -94,7 +94,7 @@ def main():
                     skipped += 1
                     continue
 
-                text_md = to_md(fundation["ref"], sheet_config)
+                text_md = to_md(foundation["ref"], sheet_config)
                 with open(md_path, "w") as f:
                     f.write(text_md)
                 processed += 1

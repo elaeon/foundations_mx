@@ -1,5 +1,5 @@
 """
-Build a compact JSON for the website by merging CSV stats with fundations scores.
+Build a compact JSON for the website by merging CSV stats with foundations scores.
 
 Reads occupations.csv (for stats) and scores.json (for scores).
 Writes site/data.json.
@@ -18,7 +18,7 @@ def main():
         scores_list = json.load(f)
     scores = {s["rfc"]: s for s in scores_list}
 
-    with open("fundations.csv", "r") as f:
+    with open("foundations.csv", "r") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
 
@@ -47,7 +47,7 @@ def main():
     with open("site/data.json", "w") as f:
         json.dump(data, f)
 
-    print(f"Wrote {len(data)} fundations to site/data.json")
+    print(f"Wrote {len(data)} foundations to site/data.json")
     total_benef = sum(d["beneficiaries"] for d in data if d["beneficiaries"])
     print(f"Total beneficiaries represented: {total_benef:,}")
 

@@ -136,7 +136,7 @@ def read_excel_and_save_csv(sheet_columns_dict, empty_cols, data_folder="data"):
         print(df_dict[excel_file.name].shape)
 
     df_all = pl.concat(list(df_dict.values()))
-    output_file = "fundations.csv"
+    output_file = "foundations.csv"
     df_all.write_csv(output_file)
     print("Done!")
 

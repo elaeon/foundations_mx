@@ -15,7 +15,7 @@ API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
 SYSTEM_PROMPT = """\
-You are an expert analyst evaluating how fundations and trusts efficiency manage
+You are an expert analyst evaluating how foundations and trusts efficiency manage
 their resources, also you have to inspect and decide if they are diverting money or doing
 activities in laundring money.
 You will be given a detailed description of an trust from the mexican IRS (SAT), so you have to
@@ -25,18 +25,18 @@ Rate the risk's overall **laundry money and efficiency management** on a scale f
 where 0 is low risk / hight efficiency and 1 is highest risk / low efficiency.
 
 Laundry Money measures: how are manage the resources? Consider efficiency \
-risk, coherence and anomalies like in the structured model Fundation Risk & Efficiency Score (FRES).
+risk, coherence and anomalies like in the structured model Foundation Risk & Efficiency Score (FRES).
 
 Keys signals are operative efficiency (E), financial risk (R), internal coherence (C) and anomaly risk (A)
 so you can use a stadistical model to get a good value, so use Z-score if is possible.
 Usually are this variables are weigthed FRES=0.3E+0.25R+0.25C+0.2A, but you are free to adjust or update this weights if 
 the data is viable. You also can build derivates variables like liquidity, leverage and weight of the assets.
-You have to be very critic no matter the fundation's objetives or misions.
+You have to be very critic no matter the foundation's objetives or misions.
 Also, check concisely the history of the board of directors (organo de gobierno).
 
 Use these anchors to calibrate your score:
 
-- **.8–1: Very Hight exposure.** The fundation or trust is in hight risk or low efficiency.
+- **.8–1: Very Hight exposure.** The foundation or trust is in hight risk or low efficiency.
 
 - **.6–.79: Hight exposure.** They are weakness or inconsistencies that could lead to a mayor problem \
 and should be resolved.
@@ -102,8 +102,8 @@ def main():
     parser.add_argument("--year", required=False, default=2024, type=int)
 
     args = parser.parse_args()
-    with open("fundations.json") as f:
-        fundations = json.load(f)
+    with open("foundations.json") as f:
+        foundations = json.load(f)
     
     scores = {}
     if args.test:
@@ -115,11 +115,11 @@ def main():
 
     if len(rfc_list) > 0:
         subset = []
-        for fund in fundations:
+        for fund in foundations:
             if fund["rfc"] in rfc_list:
                 subset.append(fund)
     else:
-        subset = fundations[args.start:args.end]
+        subset = foundations[args.start:args.end]
 
     if not args.test:
         # Load existing scores
@@ -134,8 +134,8 @@ def main():
     errors = []
     client = httpx.Client()
 
-    for i, fundation in enumerate(subset):
-        rfc = fundation["rfc"]
+    for i, foundation in enumerate(subset):
+        rfc = foundation["rfc"]
 
         if rfc in scores:
             continue
@@ -148,13 +148,13 @@ def main():
         with open(md_path) as f:
             text = f.read()
 
-        print(f"  [{i+1}/{len(subset)}] {fundation['name']}...", end=" ", flush=True)
+        print(f"  [{i+1}/{len(subset)}] {foundation['name']}...", end=" ", flush=True)
 
         try:
             result = score_occupation(client, text, args.model)
             scores[rfc] = {
                 "rfc": rfc,
-                "name": fundation["name"],
+                "name": foundation["name"],
                 "model": args.model,
                 **result,
             }
@@ -175,7 +175,7 @@ def main():
     
     client.close()
 
-    print(f"\nDone. Scored {len(scores)} fundations, {len(errors)} errors.")
+    print(f"\nDone. Scored {len(scores)} foundations, {len(errors)} errors.")
     if errors:
         print(f"Errors: {errors}")
 
@@ -187,7 +187,7 @@ def main():
         for s in vals:
             bucket = s["exposure"]
             by_score[bucket] = by_score.get(bucket, 0) + 1
-        print(f"\nAverage exposure across {len(vals)} fundation: {avg:.1f}")
+        print(f"\nAverage exposure across {len(vals)} foundation: {avg:.1f}")
         print("Distribution:")
         for k in sorted(by_score):
             print(f"  {k}: {'█' * by_score[k]} ({by_score[k]})")
