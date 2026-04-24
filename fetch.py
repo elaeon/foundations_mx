@@ -52,6 +52,7 @@ def run_playwright_command(command: str, args: list | None = None) -> dict:
                 text=True,
                 check=True
             )
+
         result["success"] = True
         result["stdout"] = process.stdout
         result["stderr"] = process.stderr
@@ -64,7 +65,7 @@ def run_playwright_command(command: str, args: list | None = None) -> dict:
     return result
 
 
-def search_word_in_latest_file(word: str, directory: str = ".playwright-cli") -> dict:
+def search_word_in_latest_file(word: str, directory: str = ".playwright-cli", stdout=None) -> dict:
     """Search for a word in the latest file of a directory and return the matching line."""
     result = {
         "found": False,
@@ -74,33 +75,40 @@ def search_word_in_latest_file(word: str, directory: str = ".playwright-cli") ->
         "error": None
     }
     
+    def _search(lines):
+        for line_num, line in enumerate(lines, start=1):
+            if word.lower() in line.lower():
+                result["found"] = True
+                result["line"] = line.strip()
+                result["line_number"] = line_num
+                return result
+
     try:
-        dir_path = Path(directory)
-        if not dir_path.exists():
-            result["error"] = f"Directory '{directory}' not found"
-            return result
-        
-        # Get all files in the directory, sorted by modification time (latest first)
-        files = sorted(dir_path.iterdir(), key=lambda f: f.stat().st_mtime, reverse=True)
-        
-        if not files:
-            result["error"] = f"No files found in '{directory}'"
-            return result
-        
-        latest_file = files[0]
-        result["file"] = str(latest_file)
-        
         # Read the latest file and search for the word
-        with open(latest_file, "r", encoding="utf-8") as file:
-            for line_num, line in enumerate(file, start=1):
-                if word.lower() in line.lower():
-                    result["found"] = True
-                    result["line"] = line.strip()
-                    result["line_number"] = line_num
-                    return result
+        if stdout is not None:
+            _search(stdout.split("\n"))
+            ref_name = "stdout"
+        else:
+            dir_path = Path(directory)
+            if not dir_path.exists():
+                result["error"] = f"Directory '{directory}' not found"
+                return result
+        
+            # Get all files in the directory, sorted by modification time (latest first)
+            files = sorted(dir_path.iterdir(), key=lambda f: f.stat().st_mtime, reverse=True)
+        
+            if not files:
+                result["error"] = f"No files found in '{directory}'"
+                return result
+
+            latest_file = files[0]
+            ref_name = latest_file.name
+            result["file"] = str(latest_file)
+            with open(latest_file, "r", encoding="utf-8") as file:
+                _search(file)
         
         if not result["found"]:
-            result["error"] = f"Word '{word}' not found in {latest_file.name}"
+            result["error"] = f"Word '{word}' not found in {ref_name}"
     
     except Exception as e:
         result["error"] = f"Error reading file: {e}"
@@ -158,12 +166,13 @@ def process_rfcs() -> None:
     
     def get_ref():
         # Snapshot once to resolve stable form field refs (they don't change across iterations)
-        run_playwright_command("snapshot")
-        time.sleep(.25)
-        result_word_rfc = search_word_in_latest_file('textbox "RFC"')
-        result_word_ef = search_word_in_latest_file('combobox "Ejercicio fiscal"')
-        ref_rfc = extract_ref_pattern(result_word_rfc["line"])["matches"]["ref"]
-        ref_ef = extract_ref_pattern(result_word_ef["line"])["matches"]["ref"]
+        result_cmd = run_playwright_command("snapshot")
+        if result_cmd.get("success", False):
+            result_word_rfc = search_word_in_latest_file('textbox "RFC"', stdout=result_cmd["stdout"])
+            print(result_word_rfc)
+            result_word_ef = search_word_in_latest_file('combobox "Ejercicio fiscal"', stdout=result_cmd["stdout"])
+            ref_rfc = extract_ref_pattern(result_word_rfc["line"])["matches"]["ref"]
+            ref_ef = extract_ref_pattern(result_word_ef["line"])["matches"]["ref"]
         return ref_rfc, ref_ef
 
     ref_rfc, ref_ef = get_ref()
@@ -175,19 +184,19 @@ def process_rfcs() -> None:
         for cmd, opts in commands_opt:
             result = run_playwright_command(cmd, opts)
             if "e48"in opts:
-                result = run_playwright_command("snapshot")
-                time.sleep(.25)
-                result_word = search_word_in_latest_file("No existen declaraciones de los filtros seleccionados")
-                if result_word["found"] is True:
-                    print(f"{rfc}: No existen declaraciones de los filtros seleccionados")
-                    result_word = search_word_in_latest_file('button "Aceptar"')
-                    match = extract_ref_pattern(result_word["line"])
-                    print(match["found"], match["matches"]["ref"])
-                    if match["found"] is True:
-                        result = run_playwright_command("click", [match["matches"]["ref"]])
-                        result = run_playwright_command("click", ["e47"])
-                        ref_rfc, ref_ef = get_ref()
-                        break
+                result_cmd = run_playwright_command("snapshot")
+                if result_cmd.get("success", False):
+                    result_word = search_word_in_latest_file("No existen declaraciones de los filtros seleccionados", stdout=result_cmd["stdout"])
+                    if result_word["found"] is True:
+                        print(f"{rfc}: No existen declaraciones de los filtros seleccionados")
+                        result_word = search_word_in_latest_file('button "Aceptar"')
+                        match = extract_ref_pattern(result_word["line"])
+                        print(match["found"], match["matches"]["ref"])
+                        if match["found"] is True:
+                            result = run_playwright_command("click", [match["matches"]["ref"]])
+                            result = run_playwright_command("click", ["e47"])
+                            ref_rfc, ref_ef = get_ref()
+                            break
         else:
             # Move the file to foundations directory
             source_file = Path(".playwright-cli/InformeTransparencia.xlsx")
