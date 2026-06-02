@@ -102,6 +102,49 @@ Open your browser and navigate to `http://localhost:8000` to see the visualizati
 | Score foundations | `uv run python score.py` |
 | Build website data | `uv run python build_site_data.py` |
 | Serve site locally | `cd site && python -m http.server 8000` |
+| Search donations by keyword | `uv run python analyze.py search --input-file foundations_full.csv --keyword educacion` |
+| Find suspicious donation patterns | `uv run python analyze.py graph --input-file foundations_full.csv [mode]` |
+
+## Analyzing donation patterns (`analyze.py`)
+
+`analyze.py` models the data as a **directed donation graph** (donor → recipient, with cash
+and in-kind amounts on each edge) and screens it for suspicious relations. It is a screening
+aid, **not an auditor** — patterns it finds also have legitimate explanations and must be
+verified against primary sources.
+
+Two subcommands:
+
+- **`search`** — export *Destino de donativos* rows for foundations matching a keyword
+  (`--input-file`, `--keyword`, `--output`, `--limit`).
+- **`graph`** — find suspicious patterns. First run builds and caches the graph next to the
+  input file (e.g. `foundations_full_graph.json`); later runs reuse the cache (`--force`
+  rebuilds).
+
+`graph` **modes** (mutually exclusive; omit all for cycle detection):
+
+| Mode | Surfaces |
+|------|----------|
+| *(none)* | **Cycles** — circular money flows, ranked by `bottleneck` (smallest hop = amount that actually circulates) |
+| `--reciprocal` | Mutual pairs `A↔B` with a `balance` ratio (1.0 = perfectly balanced) |
+| `--conduits` | Pass-through nodes (`in`, `out`, `retained`, `ratio`) |
+| `--clusters` | Strongly-connected groups by size and % money retained internally |
+| `--self-loops` | RFCs donating to themselves |
+| `--predecessors` | RFCs that donate **into** `--rfc` (requires `--rfc`) |
+| `--successors` | RFCs that `--rfc` donates **to** (requires `--rfc`) |
+
+Useful flags: `--rfc RFC` (focus on one entity; omit to scan everything), `--min-amount PESOS`
+(ignore small flows), `--output FILE` (save instead of print). Cycle mode adds `--max-cycles`,
+`--max-depth`, `--shortest`, `--greater-than N` (e.g. `1` drops self-loops), `--distinct-prev`.
+Conduit mode adds `--ratio R` (e.g. `0.9` for near-perfect pass-throughs).
+
+```bash
+# Highest-value circular flows across the whole graph
+uv run python analyze.py graph --input-file foundations_full.csv --min-amount 1000000
+
+# Map one entity's network
+uv run python analyze.py graph --input-file foundations_full.csv --rfc FER001020CE1 --successors
+uv run python analyze.py graph --input-file foundations_full.csv --rfc FER001020CE1 --predecessors
+```
 
 ## Notes
 

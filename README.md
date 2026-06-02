@@ -89,3 +89,83 @@ uv run python score.py --add [RFC_1,...]
 
 ```
 Inside foundations.json you can consult the RFC and foundations names.
+
+## Analysis (`analyze.py`)
+
+`analyze.py` explores the donation data as a **directed graph** of money flows between
+RFCs (donor → recipient, with cash `monto_efectivo` and in-kind `monto_especie` on each
+edge). It is a screening aid for spotting suspicious relations — **not** an auditor; every
+pattern it surfaces also has legitimate explanations and should be verified against primary
+sources.
+
+It has two subcommands: `search` and `graph`.
+
+### `search` — keyword search + export
+
+Finds foundations whose `Rubro`, `Misión`, or `Actividad` match a keyword, then exports
+their *Destino de donativos* rows to CSV.
+
+```bash
+uv run python analyze.py search --input-file foundations_full.csv --keyword educacion
+```
+
+| Option | Description |
+|--------|-------------|
+| `--input-file` | **(required)** CSV with a `ref` column (e.g. `foundations_full.csv`) |
+| `--keyword` | **(required)** case-insensitive substring matched against Rubro/Misión/Actividad |
+| `--output` | output CSV path (default `destino_donativos.csv`) |
+| `--limit N` | process only the first N matched files |
+
+### `graph` — find suspicious donation patterns
+
+On first run it builds the graph from the XLSX files referenced in the CSV and caches it
+next to the input (e.g. `foundations_full_graph.json`); later runs load the cache. Pick a
+**mode** below; default mode (no mode flag) is cycle detection.
+
+```bash
+# Whole-graph scan for the highest-value circular flows
+uv run python analyze.py graph --input-file foundations_full.csv --min-amount 1000000
+
+# Deep dive on one RFC
+uv run python analyze.py graph --input-file foundations_full.csv --rfc FER001020CE1
+uv run python analyze.py graph --input-file foundations_full.csv --rfc FER001020CE1 --successors
+```
+
+**Modes** (mutually exclusive; omit all for cycle detection):
+
+| Mode | What it surfaces | Red flag |
+|------|------------------|----------|
+| *(none)* | **Cycles** — money that loops back to its origin, ranked by `bottleneck` (the smallest hop = how much actually circulates) | Round-tripping / circular flows |
+| `--reciprocal` | Mutual-donation pairs `A↔B` ranked by round-tripped amount, with a `balance` ratio (1.0 = perfectly balanced) | Wash-style two-way exchanges |
+| `--conduits` | Pass-through nodes: `in`, `out`, `retained`, `ratio = min(in,out)/max(in,out)` | Layering — money parked briefly then forwarded |
+| `--clusters` | Strongly-connected groups ranked by size and `% internal money retained` | Related-party networks recycling funds internally |
+| `--self-loops` | RFCs that donate to themselves, ranked by amount | Self-dealing or data artifacts |
+| `--predecessors` | All RFCs that donate **into** `--rfc` (requires `--rfc`) | Who funds this entity |
+| `--successors` | All RFCs that `--rfc` donates **to** (requires `--rfc`) | Where this entity's money goes |
+
+**Common options:**
+
+| Option | Description |
+|--------|-------------|
+| `--input-file` | **(required)** CSV with `ref` and `Rfc` columns |
+| `--rfc RFC` | focus on one RFC; omit to scan the whole graph |
+| `--min-amount PESOS` | ignore cycles/pairs/nodes/clusters below this peso amount |
+| `--output FILE` | write results to a file instead of printing |
+| `--force` | rebuild the graph, ignoring the cache |
+| `--limit N` | build from only the first N files (skips cache write) |
+
+**Cycle-mode options:**
+
+| Option | Description |
+|--------|-------------|
+| `--max-cycles N` | max cycles to return (default 100; `0` = unlimited) |
+| `--max-depth N` | max cycle length in hops (default 8; `0` = unlimited) |
+| `--shortest` | return only the shortest cycles |
+| `--greater-than N` | only cycles with more than N nodes (e.g. `1` drops self-loops) |
+| `--distinct-prev` | shortest cycle per distinct direct predecessor (requires `--rfc`) |
+
+**Conduit-mode option:**
+
+| Option | Description |
+|--------|-------------|
+| `--ratio R` | keep only nodes with `min(in,out)/max(in,out) >= R` (default `0` = no filter; e.g. `0.9` for near-perfect pass-throughs) |
