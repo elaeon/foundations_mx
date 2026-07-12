@@ -7,22 +7,7 @@ import json
 
 def cmd_search(input_file: str, keyword: str, output: str, limit: int | None = None) -> None:
     kw = keyword.lower()
-    mask = (
-        pl.col("Rubro").str.to_lowercase().str.contains(kw, literal=True)
-        | pl.col("Misión").str.to_lowercase().str.contains(kw, literal=True)
-        | pl.col("Actividad").str.to_lowercase().str.contains(kw, literal=True)
-    )
-    refs = (
-        pl.scan_csv(input_file)
-        .filter(mask)
-        .select("ref")
-        .collect()["ref"]
-        .to_list()
-    )
-
-    if not refs:
-        print(f"No foundations matched keyword: {keyword}")
-        return
+    refs = pl.read_csv(input_file, columns=["ref"])["ref"].to_list()
 
     if limit:
         refs = refs[:limit]
@@ -40,20 +25,21 @@ def cmd_search(input_file: str, keyword: str, output: str, limit: int | None = N
                              "Monto", "Número de beneficiados", "Entidad federativa", "Municipio"],
                 )
                 .cast({"Monto": pl.Float64, "Número de beneficiados": pl.Int64})
+                .filter(pl.col("Concepto").str.to_lowercase().str.contains(kw, literal=True))
                 .with_columns(pl.lit(ref).alias("ref"))
-                .lazy()
             )
-            lazy_frames.append(df)
+            if not df.is_empty():
+                lazy_frames.append(df.lazy())
         except ValueError:
             continue
     print()
 
     if not lazy_frames:
-        print(f"No 'Destino de donativos' data found for keyword: {keyword}")
+        print(f"No 'Destino de donativos' rows matched keyword '{keyword}' in Concepto")
         return
 
     pl.concat(lazy_frames).collect().write_csv(output)
-    print(f"Wrote {output} ({len(lazy_frames)} foundations matched)")
+    print(f"Wrote {output} ({len(lazy_frames)} foundations with matches)")
 
 
 def _build_graph(input_file: str, limit: int | None = None) -> nx.DiGraph:
